@@ -7,6 +7,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
   app: {
+    baseURL: '/hartleyassociates.github.io/',
+    buildAssetsDir: 'assets',
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   modules: [
