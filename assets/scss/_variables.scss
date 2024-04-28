@@ -1,0 +1,41 @@
+// Colours
+$white-colour: #fff !default;
+$black-colour: #000 !default;
+
+// Theme Colours
+$primary-colour: #4d7e3e !default;
+$secondary-colour: #31c48d !default;
+$background-colour: $white-colour !default;
+$text-colour: $black-colour !default;
+$card-colour: #7a7a7a !default;
+$dark-card-colour: $black-colour !default;
+
+// Typography
+$regular-font-weight: 400 !default;
+$bold-font-weight: 400 !default;
+
+// =============================================================================
+// Reboot settings
+// =============================================================================
+
+$base-font-size: 16px !default;
+$base-line-height: get-line-height(16, 20) !default;
+$base-font-weight: $regular-font-weight !default;
+$base-font-family: Rufina, "Times New Roman", Times, serif !default;
+$headings-margin-bottom: px-to-rem(15px) !default;
+$content-margin-bottom: px-to-rem(20px) !default;
+$dt-font-weight: $regular-font-weight !default;
+$link-colour: $primary-colour !default;
+$link-decoration: none !default;
+$link-hover-colour: darken($primary-colour, 15%) !default;
+$link-hover-decoration: none !default;
+$table-cell-padding: px-to-rem(10px) !default;
+$text-colour-muted: lighten($text-colour, 20%) !default;
+$h1-font-size: $base-font-size * 2.5 !default;
+$h2-font-size: $base-font-size * 2 !default;
+$h3-font-size: $base-font-size * 1.75 !default;
+$h4-font-size: $base-font-size * 1.5 !default;
+$h5-font-size: $base-font-size * 1.25 !default;
+$h6-font-size: $base-font-size !default;
+$small-font-size: $base-font-size * 0.8 !default;
+$sub-sup-font-size: $base-font-size * 0.6 !default;

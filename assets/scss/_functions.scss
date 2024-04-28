@@ -1,0 +1,15 @@
+// px to rem
+// @param {Number} $size - Size of element based on px - '16px'...cannot be '16'
+// @return {Number} - Returned is translated $size in rems
+@function px-to-rem($size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+
+// Line height calc
+// @param {Number} $fontsize - font size of text based on px
+// @param {Number} $lineheight - line height of text based on px
+// @return {Number} - Returned is translated $lineheightSize decimal places
+@function get-line-height($fontsize, $lineheight) {
+  @return $lineheight / $fontsize;
+}
