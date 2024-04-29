@@ -11,11 +11,7 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets',
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  modules: [
-    "@nuxtjs/seo",
-    "@nuxt/image",
-    "@nuxt/fonts"
-  ],
+  modules: ["@nuxtjs/seo", "@nuxt/image", "@nuxt/fonts", "@zadigetvoltaire/nuxt-gtm"],
   site: {
     url: SITE_URL,
     name: SITE_NAME,
@@ -65,5 +61,10 @@ export default defineNuxtConfig({
     families: [
       { name: 'Rufina', provider: 'google' },
     ],
+  },
+  gtm: {
+    id: 'GTM-KWMJ6G57',
+    defer: true,
+    compatibility: true,
   }
 })
