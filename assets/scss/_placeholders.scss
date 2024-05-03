@@ -1,0 +1,57 @@
+// headings, i.e. h1, h2, h3...
+%heading {
+  margin-top: 0; // 1
+  margin-bottom: $headings-margin-bottom;
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-colour;
+}
+
+// container wraps
+%containerWide {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1740px;
+  padding: 0 20px;
+}
+
+%containerBase {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+}
+
+// buttons
+%button {
+  display: inline-block;
+  font-size: px-to-rem(14px);
+  padding: px-to-rem(12px) px-to-rem(20px);
+  border: px-to-rem(1px) solid $white-colour;
+  border-radius: 0;
+  white-space: nowrap;
+  background: $black-colour;
+  color: $white-colour;
+  transition: color 250ms ease-in-out, opacity 250ms ease-in-out,
+    background 250ms ease-in-out, border 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: $primary-colour;
+    border-color: $primary-colour;
+    color: $white-colour;
+  }
+}
+
+%primaryButton {
+  @extend %button;
+  background: $primary-colour;
+
+  &:hover,
+  &:focus {
+    background: $black-colour;
+    border-color: $black-colour;
+  }
+}

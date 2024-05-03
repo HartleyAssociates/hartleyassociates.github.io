@@ -14,6 +14,13 @@ $dark-card-colour: $black-colour !default;
 $regular-font-weight: 400 !default;
 $bold-font-weight: 400 !default;
 
+// Z-index
+$zindex-menu: 9999 !default;
+$zindex-header: 9998 !default;
+$zindex-two: 2 !default;
+$zindex-one: 1 !default;
+$zindex-zero: 0 !default;
+
 // =============================================================================
 // Reboot settings
 // =============================================================================

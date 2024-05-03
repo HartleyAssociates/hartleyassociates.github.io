@@ -6,12 +6,32 @@ const SITE_URL = 'https://hartleyassociates.info'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
-  app: {
-    baseURL: '/',
-    buildAssetsDir: 'assets',
-    pageTransition: { name: 'page', mode: 'out-in' }
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/include.scss" as *;',
+        }
+      }
+    }
   },
-  modules: ["@nuxtjs/seo", "@nuxt/image", "@nuxt/fonts", "@zadigetvoltaire/nuxt-gtm"],
+  app: {
+    // baseURL: '/',
+    // buildAssetsDir: 'assets',
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      script: [
+        { src: 'https://kit.fontawesome.com/01092ac2cf.js', crosscrossorigin: 'anonymous' }
+      ]
+    }
+  },
+  modules: [
+    "@nuxtjs/seo",
+    "@nuxt/image",
+    "@nuxt/fonts",
+    "@zadigetvoltaire/nuxt-gtm",
+    "@pinia/nuxt"
+  ],
   site: {
     url: SITE_URL,
     name: SITE_NAME,
@@ -66,5 +86,8 @@ export default defineNuxtConfig({
     id: 'GTM-KWMJ6G57',
     defer: true,
     compatibility: true,
-  }
+  },
+  alias: {
+    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+  },
 })

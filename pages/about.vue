@@ -1,6 +1,6 @@
 <template>
   <Container>
     <h1>About Page</h1>
-    <NuxtLink href="/">Home (link)</NuxtLink>
+    <NuxtLink to="/">Home (link)</NuxtLink>
   </Container>
 </template>
