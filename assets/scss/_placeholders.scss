@@ -57,3 +57,14 @@
     border-color: $black-colour;
   }
 }
+
+%secondaryButton {
+  @extend %button;
+  background: $secondary-colour;
+
+  &:hover,
+  &:focus {
+    background: $black-colour;
+    border-color: $black-colour;
+  }
+}
