@@ -50,6 +50,7 @@ const store = useNavigationStore();
   }
 
   &-logo {
+    display: block;
     width: 200px;
     height: 38px;
 

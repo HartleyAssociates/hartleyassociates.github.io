@@ -2,7 +2,7 @@
 // @param {Number} $size - Size of element based on px - '16px'...cannot be '16'
 // @return {Number} - Returned is translated $size in rems
 @function px-to-rem($size) {
-  $remSize: $size / $base-font-size;
+  $remSize: math.div($size, $base-font-size);
   @return #{$remSize}rem;
 }
 

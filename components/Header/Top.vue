@@ -8,11 +8,11 @@ const contactDetails = useContactDetails();
     <div class="header__top-container">
       <div class="header__top-left">
         <nav
-          v-if="contactDetails && contactDetails.length > 0"
+          v-if="contactDetails?.linkList && contactDetails.linkList.length > 0"
           class="header__top-left-nav"
         >
           <p
-            v-for="(item, index) in contactDetails"
+            v-for="(item, index) in contactDetails.linkList"
             :key="`contactDetails--${index}`"
             class="header__top-left-p"
           >

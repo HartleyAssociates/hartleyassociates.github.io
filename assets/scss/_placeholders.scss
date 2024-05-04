@@ -10,18 +10,20 @@
 }
 
 // container wraps
-%containerWide {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1740px;
-  padding: 0 20px;
-}
-
 %containerBase {
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
   padding: 0 20px;
+}
+
+%containerWide {
+  @extend %containerBase;
+  max-width: 1740px;
+}
+
+%containerDefault {
+  @extend %containerBase;
+  max-width: 1440px;
 }
 
 // buttons
