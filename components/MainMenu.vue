@@ -16,7 +16,6 @@ const store = useNavigationStore();
         v-for="(item, index) in store.mainmenuLinks"
         :key="`mainmenuLinks--${index}`"
         class="mainmenu__nav-div"
-        :href="item.href"
       >
         <NuxtLink
           :to="item.href"

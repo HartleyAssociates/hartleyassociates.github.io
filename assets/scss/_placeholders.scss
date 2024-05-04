@@ -68,3 +68,7 @@
     border-color: $black-colour;
   }
 }
+
+%tertiaryButton {
+  @extend %button;
+}
