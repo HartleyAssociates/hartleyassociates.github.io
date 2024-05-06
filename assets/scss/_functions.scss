@@ -11,5 +11,5 @@
 // @param {Number} $lineheight - line height of text based on px
 // @return {Number} - Returned is translated $lineheightSize decimal places
 @function get-line-height($fontsize, $lineheight) {
-  @return $lineheight / $fontsize;
+  @return math.div($lineheight, $fontsize);
 }
