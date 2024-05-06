@@ -53,6 +53,7 @@ const { title, description, cards } = defineProps({
 </template>
 
 <style lang="scss">
+@use "sass:math";
 .icon-card-grid {
   &__container {
     @extend %containerDefault;
@@ -94,11 +95,11 @@ const { title, description, cards } = defineProps({
     flex: 1 0 100%;
 
     @media only screen and (min-width: 600px) {
-      flex: 1 0 calc(50% - #{px-to-rem(100px / 2)});
+      flex: 1 0 calc(50% - #{px-to-rem(math.div(100px, 2))});
     }
 
     @media only screen and (min-width: 1024px) {
-      flex: 1 0 calc(33.333% - #{px-to-rem(100px / 3)});
+      flex: 1 0 calc(33.333% - #{px-to-rem(math.div(100px, 3))});
     }
   }
 }

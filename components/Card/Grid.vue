@@ -29,6 +29,7 @@ const { marginTop, cards } = defineProps({
 </template>
 
 <style lang="scss">
+@use "sass:math";
 .card-grid {
   &.section {
     @media only screen and (min-width: 800px) {
@@ -59,7 +60,7 @@ const { marginTop, cards } = defineProps({
     flex: 1 0 100%;
 
     @media only screen and (min-width: 800px) {
-      flex: 1 0 calc(33.333% - #{px-to-rem(100px / 3)});
+      flex: 1 0 calc(33.333% - #{px-to-rem(math.div(100px, 3))});
     }
   }
 
