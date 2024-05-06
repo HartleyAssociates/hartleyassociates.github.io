@@ -103,9 +103,7 @@ const { image, title, description, linkText, link } = defineProps({
 
   &__title {
     font-size: px-to-rem(20px);
-    font-weight: bold;
-    color: $title-colour;
-    margin-bottom: $headings-margin-bottom;
+    @extend %heading;
   }
 
   // &__description { }

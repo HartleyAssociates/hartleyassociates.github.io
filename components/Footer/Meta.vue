@@ -58,7 +58,7 @@ const contactDetails = useContactDetails();
 .footer__meta {
   &-logo {
     display: block;
-    width: 305px; // 200px;
+    max-width: 305px; // 200px;
     height: auto; // 38px;
 
     svg {
@@ -134,7 +134,7 @@ const contactDetails = useContactDetails();
   }
 
   &-social {
-    margin: px-to-rem(5px) 0 0;
+    margin: px-to-rem(15px) 0 0;
 
     &-a {
       & + .footer__meta-social-a {

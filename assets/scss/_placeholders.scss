@@ -4,7 +4,7 @@
   margin-bottom: $headings-margin-bottom;
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: $base-font-weight;
+  font-weight: bold;
   line-height: $base-line-height;
   color: $title-colour;
 }
@@ -13,7 +13,7 @@
 %containerBase {
   margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 %containerWide {
@@ -71,4 +71,15 @@
 
 %tertiaryButton {
   @extend %button;
+}
+
+// user generated content
+%ugc {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

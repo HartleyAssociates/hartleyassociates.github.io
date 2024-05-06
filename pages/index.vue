@@ -32,5 +32,47 @@
         },
       ]"
     />
+
+    <IconCardGrid
+      title="Bespoke Financial planning <br/><i>to suit you</i>"
+      :cards="[
+        {
+          icon: 'arrow-right',
+          title: 'Moving Home',
+          description:
+            'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+        },
+        {
+          icon: 'arrow-right',
+          title: 'Saving for the future',
+          description:
+            'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+        },
+        {
+          icon: 'arrow-right',
+          title: 'Transferring your pension',
+          description:
+            'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+        },
+        {
+          icon: 'arrow-right',
+          title: 'Releasing money from home',
+          description:
+            'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+        },
+        {
+          icon: 'arrow-right',
+          title: 'Protection your family',
+          description:
+            'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+        },
+        {
+          icon: 'arrow-right',
+          title: 'Lorem ipsum dolor',
+          description:
+            'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+        },
+      ]"
+    />
   </Container>
 </template>

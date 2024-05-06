@@ -7,4 +7,10 @@ declare global {
     linkText: string;
     link: string;
   }
+
+  type IconCardType = {
+    icon: string;
+    title: string;
+    description: string;
+  }
 }

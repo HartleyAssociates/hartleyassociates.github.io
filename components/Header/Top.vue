@@ -131,7 +131,7 @@ const contactDetails = useContactDetails();
         }
 
         & + .header__top-right-nav-a {
-          margin: 0 0 0 px-to-rem(10px);
+          margin: 0 0 0 px-to-rem(15px);
         }
       }
     }
