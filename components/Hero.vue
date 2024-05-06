@@ -1,5 +1,5 @@
 <script setup lang="ts">
-interface HeroButton {
+interface HeroButtonType {
   title: string;
   href: string;
   type: "primary" | "secondary" | "tertiary";
@@ -34,7 +34,7 @@ const { img, alt, type, title, buttons } = defineProps({
     },
   },
   buttons: {
-    type: Array as PropType<HeroButton[]>,
+    type: Array as PropType<HeroButtonType[]>,
     default() {
       return [];
     },

@@ -10,10 +10,5 @@ export const useSocialMediaLinks = () => {
             text: 'linkedin',
             fa: 'linkedin-in'
         },
-        {
-            link: 'https://twitter.com',
-            text: 'twitter',
-            fa: 'twitter'
-        },
     ])
 }
