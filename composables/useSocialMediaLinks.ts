@@ -1,14 +1,14 @@
 export const useSocialMediaLinks = () => {
-    return useState('socialMediaLinks', () => [
-        {
-            link: 'https://facebook.com',
-            text: 'facebook',
-            fa: 'facebook-f',
-        },
-        {
-            link: 'https://uk.linkedin.com/company/hartleyassociates',
-            text: 'linkedin',
-            fa: 'linkedin-in',
-        },
-    ])
+  return useState('socialMediaLinks', () => [
+    {
+      link: 'https://facebook.com',
+      text: 'facebook',
+      fa: 'facebook-f',
+    },
+    {
+      link: 'https://uk.linkedin.com/company/hartleyassociates',
+      text: 'linkedin',
+      fa: 'linkedin-in',
+    },
+  ])
 }
