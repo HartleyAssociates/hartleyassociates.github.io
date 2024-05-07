@@ -75,5 +75,7 @@
       link="/contact-us"
       link-text="Get a free quote"
     />
+
+    <Testimonials />
   </Container>
 </template>

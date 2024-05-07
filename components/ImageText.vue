@@ -92,7 +92,7 @@ const { textAlignment, title, description, link, linkText, image, alt } = define
     justify-content: flex-start;
     align-items: center;
     grid-column-gap: px-to-rem(50px);
-    grid-row-gap: px-to-rem(20px);
+    grid-row-gap: px-to-rem(50px);
 
     @media only screen and (min-width: 800px) and (max-width: 1199px) {
       max-width: px-to-rem(800px);

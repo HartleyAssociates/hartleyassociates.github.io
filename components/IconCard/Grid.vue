@@ -84,7 +84,7 @@ const { title, description, cards } = defineProps({
     flex: 1 0 100%;
 
     @media only screen and (min-width: 600px) {
-      flex: 1 0 calc(50% - #{px-to-rem(math.div(100px, 2))});
+      flex: 1 0 calc(50% - #{px-to-rem(math.div(50px, 2))});
     }
 
     @media only screen and (min-width: 1024px) {
