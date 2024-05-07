@@ -68,5 +68,12 @@
         },
       ]"
     />
+
+    <ImageText
+      title="How We Help Businesses <i>Keep Running and Healthy.</i>"
+      description="Companies seem to dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success at realizing the company is going in the wrong direction."
+      link="/contact-us"
+      link-text="Get a free quote"
+    />
   </Container>
 </template>

@@ -52,7 +52,7 @@ const { marginTop, cards } = defineProps({
     grid-row-gap: px-to-rem(20px);
 
     @media only screen and (max-width: 799px) {
-      max-width: 440px;
+      max-width: px-to-rem(440px);
     }
   }
 
