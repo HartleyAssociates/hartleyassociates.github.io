@@ -3,12 +3,12 @@ export const useSocialMediaLinks = () => {
         {
             link: 'https://facebook.com',
             text: 'facebook',
-            fa: 'facebook-f'
+            fa: 'facebook-f',
         },
         {
             link: 'https://uk.linkedin.com/company/hartleyassociates',
             text: 'linkedin',
-            fa: 'linkedin-in'
+            fa: 'linkedin-in',
         },
     ])
 }

@@ -7,14 +7,14 @@ export const useContactDetails = () => {
                 link: 'tel:+447910729832',
                 text: 'Call Us',
                 altText: '+44 7910 729832',
-                type: 'phone'
+                type: 'phone',
             },
             {
                 link: 'mailto:enquires@hartleyassociates.info',
                 text: 'Email Us',
                 altText: 'enquires@hartleyassociates.info',
-                type: 'email'
+                type: 'email',
             },
-        ]
+        ],
     }))
 }
