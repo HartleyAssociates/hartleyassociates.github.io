@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       meta: [{}],
-      script: [{ src: 'https://kit.fontawesome.com/01092ac2cf.js', crosscrossorigin: 'anonymous' }],
+      script: [{ src: 'https://kit.fontawesome.com/f1d1dadb8c.js', crosscrossorigin: 'anonymous' }],
     },
   },
   modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxt/image', '@nuxt/fonts', '@zadigetvoltaire/nuxt-gtm', '@pinia/nuxt'],
