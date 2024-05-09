@@ -22,7 +22,8 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      meta: [{}],
+      // TODO: remove when going live
+      meta: [{ name: 'robots', content: 'noindex, nofollow'}],
       script: [{ src: 'https://kit.fontawesome.com/f1d1dadb8c.js', crosscrossorigin: 'anonymous' }],
     },
   },
@@ -45,7 +46,9 @@ export default defineNuxtConfig({
   robots: {
     enabled: true,
     sitemap: '/sitemap.xml',
-    credits: false,
+    credits: true,
+    // TODO: remove on go live
+    disallow: ['/'],
   },
   seoExperiments: {
     enabled: true,
