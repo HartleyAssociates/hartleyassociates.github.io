@@ -105,14 +105,14 @@ const {
           {{ description }}
         </p>
 
-        <div class="image-text__link" v-if="link.length > 0 || linkText.length > 0">
+        <div v-if="link.length > 0 || linkText.length > 0" class="image-text__link">
           <NuxtLink :to="link" :target="link.charAt(0) === '/' ? '_self' : '_blank'">
             {{ linkText }}
             <i class="fa-solid fa-arrow-right" />
           </NuxtLink>
         </div>
 
-        <div class="image-text__link" v-if="linkTwo.length > 0 || linkTwoText.length > 0">
+        <div v-if="linkTwo.length > 0 || linkTwoText.length > 0" class="image-text__link">
           <NuxtLink :to="linkTwo" :target="linkTwo.charAt(0) === '/' ? '_self' : '_blank'">
             {{ linkTwoText }}
             <i class="fa-solid fa-arrow-right" />

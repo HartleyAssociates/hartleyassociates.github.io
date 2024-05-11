@@ -29,7 +29,7 @@
           title: '35+ Advisers in wider network',
           description: 'Specialist services on demand',
           linkText: 'Our Network',
-          link: '/about-us#why-choose-us',
+          link: '/about-us/our-network',
         },
       ]"
     />
