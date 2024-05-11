@@ -53,6 +53,7 @@ const { img, alt, type, title, buttons } = defineProps({
           :key="`mainmenuLinks--${index}`"
           :class="`hero__button hero__button--${item.type}`"
           :to="item.href"
+          :target="item.href.charAt(0) === '/' ? '_self' : '_blank'"
         >
           {{ item.title }}
         </NuxtLink>

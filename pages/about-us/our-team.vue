@@ -10,6 +10,7 @@
       text-alignment="left"
       image-type="portrait"
       image="https://placehold.co/400x500"
+      container-width="slender"
     />
 
     <ImageText
@@ -20,6 +21,7 @@
       text-alignment="right"
       image-type="portrait"
       image="https://placehold.co/400x500"
+      container-width="slender"
     />
 
     <ImageText
@@ -32,6 +34,7 @@
       text-alignment="left"
       image-type="portrait"
       image="https://placehold.co/400x500"
+      container-width="slender"
     />
   </Container>
 </template>

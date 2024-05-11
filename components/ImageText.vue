@@ -1,5 +1,26 @@
 <script setup lang="ts">
-const { textAlignment, imageType, title, description, link, linkText, linkTwo, linkTwoText, image, alt } = defineProps({
+const {
+  containerWidth,
+  textAlignment,
+  imageType,
+  title,
+  description,
+  link,
+  linkText,
+  linkTwo,
+  linkTwoText,
+  image,
+  alt,
+} = defineProps({
+  containerWidth: {
+    type: String,
+    default() {
+      return 'default'
+    },
+    validator(value: string) {
+      return ['slender', 'default'].includes(value)
+    },
+  },
   textAlignment: {
     type: String,
     default() {
@@ -70,7 +91,9 @@ const { textAlignment, imageType, title, description, link, linkText, linkTwo, l
 </script>
 
 <template>
-  <SectionComponent :class="`image-text image-text--${textAlignment} image-text--${imageType}`">
+  <SectionComponent
+    :class="`image-text image-text--${textAlignment} image-text--${imageType} image-text--${containerWidth}`"
+  >
     <div class="image-text__container">
       <div
         v-if="title.length > 0 || description.length > 0"
@@ -83,14 +106,14 @@ const { textAlignment, imageType, title, description, link, linkText, linkTwo, l
         </p>
 
         <div class="image-text__link" v-if="link.length > 0 || linkText.length > 0">
-          <NuxtLink :to="link">
+          <NuxtLink :to="link" :target="link.charAt(0) === '/' ? '_self' : '_blank'">
             {{ linkText }}
             <i class="fa-solid fa-arrow-right" />
           </NuxtLink>
         </div>
 
         <div class="image-text__link" v-if="linkTwo.length > 0 || linkTwoText.length > 0">
-          <NuxtLink :to="linkTwo">
+          <NuxtLink :to="linkTwo" :target="linkTwo.charAt(0) === '/' ? '_self' : '_blank'">
             {{ linkTwoText }}
             <i class="fa-solid fa-arrow-right" />
           </NuxtLink>
@@ -196,31 +219,37 @@ const { textAlignment, imageType, title, description, link, linkText, linkTwo, l
     .image-text__col--2 {
       &.image-text__text {
         @media only screen and (min-width: 800px) {
-          flex: 0 0 calc(75% - #{px-to-rem(math.div(20px, 2))});
+          flex: 0 0 calc(65% - #{px-to-rem(math.div(20px, 2))});
         }
 
         @media only screen and (min-width: 1024px) {
-          flex: 0 0 calc(75% - #{px-to-rem(math.div(30px, 2))});
+          flex: 0 0 calc(65% - #{px-to-rem(math.div(30px, 2))});
         }
 
         @media only screen and (min-width: 1200px) {
-          flex: 0 0 calc(75% - #{px-to-rem(math.div(50px, 2))});
+          flex: 0 0 calc(65% - #{px-to-rem(math.div(50px, 2))});
         }
       }
 
       &.image-text__image {
         @media only screen and (min-width: 800px) {
-          flex: 0 0 calc(25% - #{px-to-rem(math.div(20px, 2))});
+          flex: 0 0 calc(35% - #{px-to-rem(math.div(20px, 2))});
         }
 
         @media only screen and (min-width: 1024px) {
-          flex: 0 0 calc(25% - #{px-to-rem(math.div(30px, 2))});
+          flex: 0 0 calc(35% - #{px-to-rem(math.div(30px, 2))});
         }
 
         @media only screen and (min-width: 1200px) {
-          flex: 0 0 calc(25% - #{px-to-rem(math.div(50px, 2))});
+          flex: 0 0 calc(35% - #{px-to-rem(math.div(50px, 2))});
         }
       }
+    }
+  }
+
+  &--slender {
+    .image-text__container {
+      max-width: px-to-rem(940px);
     }
   }
 }

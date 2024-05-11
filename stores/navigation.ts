@@ -12,11 +12,6 @@ export const useNavigationStore = defineStore('navigationStore', {
         href: '/about-us',
         children: [
           {
-            text: 'Our Team',
-            href: '/about-us/our-team',
-            children: [],
-          },
-          {
             text: 'Why Choose Us',
             href: '/about-us#why-choose-us',
             children: [],
@@ -24,6 +19,16 @@ export const useNavigationStore = defineStore('navigationStore', {
           {
             text: 'Our Mission',
             href: '/about-us#our-mission',
+            children: [],
+          },
+          {
+            text: 'Our Team',
+            href: '/about-us/our-team',
+            children: [],
+          },
+          {
+            text: 'Our Network',
+            href: '/about-us/our-network',
             children: [],
           },
           {

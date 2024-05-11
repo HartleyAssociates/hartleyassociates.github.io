@@ -44,13 +44,13 @@ const { image, title, description, linkText, link } = defineProps({
     <div v-if="image && image.length > 0" class="card__image">
       <NuxtImg
         :src="image"
-        width="350"
-        height="200"
+        width="700"
+        height="400"
         :alt="alt"
         densities="x1 x2"
-        :placeholder="[350, 200]"
+        :placeholder="[700, 400]"
         format="webp"
-        quality="80"
+        quality="100"
         loading="lazy"
       />
     </div>
@@ -60,7 +60,12 @@ const { image, title, description, linkText, link } = defineProps({
 
       <p v-if="description" class="card__description">{{ description }}</p>
 
-      <NuxtLink v-if="link && linkText" class="card__link" :to="link">
+      <NuxtLink
+        v-if="link && linkText"
+        class="card__link"
+        :to="link"
+        :target="link.charAt(0) === '/' ? '_self' : '_blank'"
+      >
         {{ linkText }}
         <i class="fa-solid fa-arrow-right" />
       </NuxtLink>
