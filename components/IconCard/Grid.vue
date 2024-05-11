@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { title, description, cards } = defineProps({
+const { title, description, cards, rowSize } = defineProps({
   title: {
     type: String,
     default() {
@@ -18,6 +18,15 @@ const { title, description, cards } = defineProps({
       return []
     },
   },
+  rowSize: {
+    type: Number,
+    default() {
+      return 3
+    },
+    validator(value: number) {
+      return [2, 3].includes(value)
+    },
+  },
 })
 </script>
 
@@ -33,7 +42,7 @@ const { title, description, cards } = defineProps({
       </div>
 
       <div v-if="cards.length > 0" class="icon-card-grid__container icon-card-grid__container--stretch">
-        <div v-for="(item, index) in cards" :key="index" class="icon-card-grid__col icon-card-grid__col--3">
+        <div v-for="(item, index) in cards" :key="index" :class="`icon-card-grid__col icon-card-grid__col--${rowSize}`">
           <IconCardElement v-bind="item" />
         </div>
       </div>
