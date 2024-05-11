@@ -188,6 +188,8 @@ const { img, alt, type, title, buttons } = defineProps({
   &:not(.hero--home) {
     .hero__content {
       @extend %containerDefault;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

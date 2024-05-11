@@ -482,7 +482,7 @@ legend {
 
 [type='search'] {
   -webkit-appearance: textfield; // 1
-  outline-offset: -2px; // 2
+  outline-offset: px-to-rem(-2px); // 2
 }
 
 // 1. A few input types should stay LTR

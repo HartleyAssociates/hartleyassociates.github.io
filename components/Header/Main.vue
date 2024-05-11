@@ -41,8 +41,8 @@ const store = useNavigationStore()
 
   &-logo {
     display: block;
-    width: 200px;
-    height: 38px;
+    width: px-to-rem(200px);
+    height: px-to-rem(38px);
 
     svg {
       display: block;

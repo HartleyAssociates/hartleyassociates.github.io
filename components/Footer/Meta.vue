@@ -47,7 +47,7 @@ const contactDetails = useContactDetails()
 .footer__meta {
   &-logo {
     display: block;
-    max-width: 305px; // 200px;
+    max-width: px-to-rem(305px); // 200px;
     height: auto; // 38px;
 
     svg {
