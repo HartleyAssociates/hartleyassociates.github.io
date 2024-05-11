@@ -60,5 +60,7 @@
       ]"
       :row-size="2"
     />
+
+    <AccreditationsIcons />
   </Container>
 </template>
