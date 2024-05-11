@@ -47,47 +47,47 @@
   }
 
   &__col {
-    flex: 1 0 100%;
+    flex: 0 0 100%;
 
     &--2 {
       @media only screen and (min-width: 800px) {
-        flex: 1 0 calc(50% - #{px-to-rem(math.div(20px, 2))});
+        flex: 0 0 calc(50% - #{px-to-rem(math.div(20px, 2))});
       }
 
       @media only screen and (min-width: 1024px) {
-        flex: 1 0 calc(50% - #{px-to-rem(math.div(30px, 2))});
+        flex: 0 0 calc(50% - #{px-to-rem(math.div(30px, 2))});
       }
 
       @media only screen and (min-width: 1200px) {
-        flex: 1 0 calc(50% - #{px-to-rem(math.div(50px, 2))});
+        flex: 0 0 calc(50% - #{px-to-rem(math.div(50px, 2))});
       }
     }
 
     &--3 {
       @media only screen and (min-width: 800px) {
-        flex: 1 0 calc(33.333% - #{px-to-rem(math.div(40px, 3))});
+        flex: 0 0 calc(33.333% - #{px-to-rem(round(math.div(40px, 3)) + 1px)});
       }
 
       @media only screen and (min-width: 1024px) {
-        flex: 1 0 calc(33.333% - #{px-to-rem(math.div(60px, 3))});
+        flex: 0 0 calc(33.333% - #{px-to-rem(round(math.div(60px, 3)))});
       }
 
       @media only screen and (min-width: 1200px) {
-        flex: 1 0 calc(33.333% - #{px-to-rem(math.div(100px, 3))});
+        flex: 0 0 calc(33.333% - #{px-to-rem(round(math.div(100px, 3)) + 1px)});
       }
     }
 
     &--4 {
       @media only screen and (min-width: 800px) {
-        flex: 1 0 calc(50% - #{px-to-rem(math.div(20px, 2))});
+        flex: 0 0 calc(50% - #{px-to-rem(math.div(20px, 2))});
       }
 
       @media only screen and (min-width: 1024px) {
-        flex: 1 0 calc(25% - #{px-to-rem(math.div(90px, 4))});
+        flex: 0 0 calc(25% - #{px-to-rem(math.div(90px, 4))});
       }
 
       @media only screen and (min-width: 1200px) {
-        flex: 1 0 calc(25% - #{px-to-rem(math.div(150px, 4))});
+        flex: 0 0 calc(25% - #{px-to-rem(math.div(150px, 4))});
       }
     }
   }

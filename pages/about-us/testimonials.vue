@@ -1,5 +1,7 @@
 <template>
   <Container>
-    <h1>Testimonials Page</h1>
+    <Hero title="Testimonials" />
+
+    <TestimonialsListing type="listing" />
   </Container>
 </template>

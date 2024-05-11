@@ -158,7 +158,7 @@ const { textAlignment, imageType, title, description, link, linkText, image, alt
   &:not(.image-text--portrait) {
     .image-text__col {
       @media only screen and (min-width: 800px) and (max-width: 1023px) {
-        flex: 1 0 100%;
+        flex: 0 0 100%;
       }
     }
   }
@@ -167,29 +167,29 @@ const { textAlignment, imageType, title, description, link, linkText, image, alt
     .image-text__col--2 {
       &.image-text__text {
         @media only screen and (min-width: 800px) {
-          flex: 1 0 calc(75% - #{px-to-rem(math.div(20px, 2))});
+          flex: 0 0 calc(75% - #{px-to-rem(math.div(20px, 2))});
         }
 
         @media only screen and (min-width: 1024px) {
-          flex: 1 0 calc(75% - #{px-to-rem(math.div(30px, 2))});
+          flex: 0 0 calc(75% - #{px-to-rem(math.div(30px, 2))});
         }
 
         @media only screen and (min-width: 1200px) {
-          flex: 1 0 calc(75% - #{px-to-rem(math.div(50px, 2))});
+          flex: 0 0 calc(75% - #{px-to-rem(math.div(50px, 2))});
         }
       }
 
       &.image-text__image {
         @media only screen and (min-width: 800px) {
-          flex: 1 0 calc(25% - #{px-to-rem(math.div(20px, 2))});
+          flex: 0 0 calc(25% - #{px-to-rem(math.div(20px, 2))});
         }
 
         @media only screen and (min-width: 1024px) {
-          flex: 1 0 calc(25% - #{px-to-rem(math.div(30px, 2))});
+          flex: 0 0 calc(25% - #{px-to-rem(math.div(30px, 2))});
         }
 
         @media only screen and (min-width: 1200px) {
-          flex: 1 0 calc(25% - #{px-to-rem(math.div(50px, 2))});
+          flex: 0 0 calc(25% - #{px-to-rem(math.div(50px, 2))});
         }
       }
     }

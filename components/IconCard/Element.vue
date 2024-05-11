@@ -58,7 +58,7 @@ const { icon, title, description } = defineProps({
 
   &__text {
     @extend %ugc;
-    flex: 1 0 calc(100% - #{px-to-rem(50px + 10px)});
+    flex: 0 0 calc(100% - #{px-to-rem(50px + 10px)});
   }
 
   &__title {
