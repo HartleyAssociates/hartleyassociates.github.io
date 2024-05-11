@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { textAlignment, title, description, link, linkText, image, alt } = defineProps({
+const { textAlignment, imageType, title, description, link, linkText, image, alt } = defineProps({
   textAlignment: {
     type: String,
     default() {
@@ -7,6 +7,15 @@ const { textAlignment, title, description, link, linkText, image, alt } = define
     },
     validator(value: string) {
       return ['right', 'left'].includes(value)
+    },
+  },
+  imageType: {
+    type: String,
+    default() {
+      return 'landscape'
+    },
+    validator(value: string) {
+      return ['portrait', 'landscape'].includes(value)
     },
   },
   title: {
@@ -49,9 +58,12 @@ const { textAlignment, title, description, link, linkText, image, alt } = define
 </script>
 
 <template>
-  <SectionComponent :class="`image-text image-text--${textAlignment}`">
+  <SectionComponent :class="`image-text image-text--${textAlignment} image-text--${imageType}`">
     <div class="image-text__container">
-      <div v-if="title.length > 0 || description.length > 0" class="image-text__text image-text__col">
+      <div
+        v-if="title.length > 0 || description.length > 0"
+        class="image-text__text image-text__col image-text__col--2"
+      >
         <h3 v-if="title.length > 0" class="image-text__title" v-html="title" />
 
         <p v-if="description.length > 0" class="image-text__description">
@@ -64,7 +76,7 @@ const { textAlignment, title, description, link, linkText, image, alt } = define
         </NuxtLink>
       </div>
 
-      <div v-if="image.length > 0" class="image-text__image image-text__col">
+      <div v-if="image.length > 0" class="image-text__image image-text__col image-text__col--2">
         <NuxtImg
           :src="image"
           width="550"
@@ -83,50 +95,27 @@ const { textAlignment, title, description, link, linkText, image, alt } = define
 
 <style lang="scss">
 @use 'sass:math';
+
 .image-text {
+  @include columnsMixin;
+
   &__container {
-    @extend %containerDefault;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
-    grid-column-gap: px-to-rem(50px);
-    grid-row-gap: px-to-rem(50px);
-
-    @media only screen and (min-width: 800px) and (max-width: 1199px) {
-      max-width: px-to-rem(800px);
-    }
-  }
-
-  &__col {
-    flex: 1 0 100%;
-
-    @media only screen and (min-width: 1200px) {
-      flex: 1 0 calc(50% - #{px-to-rem(math.div(50px, 2))});
-    }
   }
 
   &__text {
     @extend %ugc;
+    text-align: center;
 
-    @media only screen and (max-width: 1199px) {
-      text-align: center;
+    @media only screen and (min-width: 1024px) {
+      text-align: left;
     }
   }
 
   &__title {
-    font-size: px-to-rem(32px);
+    @include componentHeading;
+    @include componentHeadingDefault;
     margin: 0;
-
-    @media only screen and (max-width: 799px) {
-      font-size: px-to-rem(20px);
-    }
-
-    i {
-      display: block;
-      color: $primary-colour;
-    }
   }
 
   &__description {
@@ -150,13 +139,58 @@ const { textAlignment, title, description, link, linkText, image, alt } = define
       display: block;
       width: 100%;
       height: auto;
+
+      @media only screen and (max-width: 799px) {
+        max-width: px-to-rem(440px);
+        margin: 0 auto;
+      }
     }
   }
 
   &--right {
     .image-text__container {
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 1024px) {
         flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &:not(.image-text--portrait) {
+    .image-text__col {
+      @media only screen and (min-width: 800px) and (max-width: 1023px) {
+        flex: 1 0 100%;
+      }
+    }
+  }
+
+  &--portrait {
+    .image-text__col--2 {
+      &.image-text__text {
+        @media only screen and (min-width: 800px) {
+          flex: 1 0 calc(75% - #{px-to-rem(math.div(20px, 2))});
+        }
+
+        @media only screen and (min-width: 1024px) {
+          flex: 1 0 calc(75% - #{px-to-rem(math.div(30px, 2))});
+        }
+
+        @media only screen and (min-width: 1200px) {
+          flex: 1 0 calc(75% - #{px-to-rem(math.div(50px, 2))});
+        }
+      }
+
+      &.image-text__image {
+        @media only screen and (min-width: 800px) {
+          flex: 1 0 calc(25% - #{px-to-rem(math.div(20px, 2))});
+        }
+
+        @media only screen and (min-width: 1024px) {
+          flex: 1 0 calc(25% - #{px-to-rem(math.div(30px, 2))});
+        }
+
+        @media only screen and (min-width: 1200px) {
+          flex: 1 0 calc(25% - #{px-to-rem(math.div(50px, 2))});
+        }
       }
     }
   }

@@ -42,6 +42,9 @@ export const useTestimonialsStore = defineStore('testimonialsStore', {
     randomNumber() {
       return Math.floor(Math.random() * this.testimonials.length - 1)
     },
+    getAllTestimonials() {
+      return this.testimonials
+    },
     getTestimonials() {
       const randomNumberOne = this.randomNumber()
       let randomNumberTwo = this.randomNumber()

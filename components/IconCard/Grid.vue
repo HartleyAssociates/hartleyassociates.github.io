@@ -23,7 +23,7 @@ const { title, description, cards } = defineProps({
 
 <template>
   <SectionComponent class="icon-card-grid">
-    <div class="icon-card-grid__container">
+    <div class="icon-card-grid__wrapper">
       <div v-if="title.length > 0 || description.length > 0" class="icon-card-grid__text">
         <h2 v-if="title.length > 0" class="icon-card-grid__title" v-html="title" />
 
@@ -32,8 +32,8 @@ const { title, description, cards } = defineProps({
         </p>
       </div>
 
-      <div v-if="cards.length > 0" class="icon-card-grid__cards">
-        <div v-for="(item, index) in cards" :key="index" class="icon-card-grid__col">
+      <div v-if="cards.length > 0" class="icon-card-grid__container icon-card-grid__container--stretch">
+        <div v-for="(item, index) in cards" :key="index" class="icon-card-grid__col icon-card-grid__col--3">
           <IconCardElement v-bind="item" />
         </div>
       </div>
@@ -42,9 +42,10 @@ const { title, description, cards } = defineProps({
 </template>
 
 <style lang="scss">
-@use 'sass:math';
 .icon-card-grid {
-  &__container {
+  @include columnsMixin;
+
+  &__wrapper {
     @extend %containerDefault;
   }
 
@@ -54,41 +55,16 @@ const { title, description, cards } = defineProps({
   }
 
   &__title {
-    @media only screen and (max-width: 799px) {
-      font-size: px-to-rem(20px);
-    }
-
-    i {
-      color: $primary-colour;
-    }
+    @include componentHeading;
+    @include componentHeadingDefault;
   }
 
-  //   &__description { }
-
-  &__cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    grid-column-gap: px-to-rem(50px);
-    grid-row-gap: px-to-rem(20px);
+  &__container {
     margin-top: px-to-rem(20px);
+    padding: 0;
 
     @media only screen and (min-width: 800px) {
       margin-top: px-to-rem(50px);
-    }
-  }
-
-  &__col {
-    flex: 1 0 100%;
-
-    @media only screen and (min-width: 600px) {
-      flex: 1 0 calc(50% - #{px-to-rem(math.div(50px, 2))});
-    }
-
-    @media only screen and (min-width: 1024px) {
-      flex: 1 0 calc(33.333% - #{px-to-rem(math.div(100px, 3))});
     }
   }
 }

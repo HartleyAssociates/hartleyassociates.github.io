@@ -92,6 +92,7 @@ const { img, alt, type, title, buttons } = defineProps({
   }
 
   &__title {
+    @include componentHeadingLarge;
     color: $white-colour;
     margin: 0;
   }

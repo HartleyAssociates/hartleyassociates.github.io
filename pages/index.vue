@@ -76,6 +76,6 @@
       link-text="Get a free quote"
     />
 
-    <Testimonials />
+    <TestimonialsListing type="homepage" />
   </Container>
 </template>
