@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { textAlignment, imageType, title, description, link, linkText, image, alt } = defineProps({
+const { textAlignment, imageType, title, description, link, linkText, linkTwo, linkTwoText, image, alt } = defineProps({
   textAlignment: {
     type: String,
     default() {
@@ -42,6 +42,18 @@ const { textAlignment, imageType, title, description, link, linkText, image, alt
       return ''
     },
   },
+  linkTwo: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
+  linkTwoText: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
   image: {
     type: String,
     default() {
@@ -70,10 +82,19 @@ const { textAlignment, imageType, title, description, link, linkText, image, alt
           {{ description }}
         </p>
 
-        <NuxtLink v-if="link.length > 0 || linkText.length > 0" :to="link">
-          {{ linkText }}
-          <i class="fa-solid fa-arrow-right" />
-        </NuxtLink>
+        <div class="image-text__link" v-if="link.length > 0 || linkText.length > 0">
+          <NuxtLink :to="link">
+            {{ linkText }}
+            <i class="fa-solid fa-arrow-right" />
+          </NuxtLink>
+        </div>
+
+        <div class="image-text__link" v-if="linkTwo.length > 0 || linkTwoText.length > 0">
+          <NuxtLink :to="linkTwo">
+            {{ linkTwoText }}
+            <i class="fa-solid fa-arrow-right" />
+          </NuxtLink>
+        </div>
       </div>
 
       <div v-if="image.length > 0" class="image-text__image image-text__col image-text__col--2">
@@ -124,6 +145,14 @@ const { textAlignment, imageType, title, description, link, linkText, image, alt
 
   &__link {
     margin: 0;
+
+    & + .image-text__link {
+      margin-top: px-to-rem(5px);
+    }
+
+    a {
+      margin: 0;
+    }
 
     i {
       font-size: 70%;

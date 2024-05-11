@@ -17,7 +17,7 @@
           title: '50 Years of experience',
           description: 'a vast knowledge base at you disposal',
           linkText: 'Who works for us',
-          link: '/about-us/team',
+          link: '/about-us/our-team',
         },
         {
           title: '127 Valued Clients',

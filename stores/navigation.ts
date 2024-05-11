@@ -13,7 +13,7 @@ export const useNavigationStore = defineStore('navigationStore', {
         children: [
           {
             text: 'Our Team',
-            href: '/about-us/team',
+            href: '/about-us/our-team',
             children: [],
           },
           {
