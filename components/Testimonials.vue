@@ -8,9 +8,12 @@ const testimonials = store.getTestimonials()
     <div v-if="testimonials.length > 0" class="testimonials__container">
       <div v-for="(item, index) in testimonials" :key="`testimonials--${index}`" class="testimonials__col">
         <blockquote class="testimonials__quote">
-          <p v-if="item.text.length > 0" class="testimonials__text">{{ item.text }}</p>
+          <p v-if="item.text && item.text.length > 0" class="testimonials__text">{{ item.text }}</p>
 
-          <cite v-if="item.name.length > 0 && item.title.length > 0" class="testimonials__cite">
+          <cite
+            v-if="item.name && item.name.length > 0 && item.title && item.title.length > 0"
+            class="testimonials__cite"
+          >
             <strong>{{ item.name }}</strong>
             <span>{{ item.title }}</span>
           </cite>

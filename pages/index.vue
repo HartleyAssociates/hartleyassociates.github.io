@@ -28,7 +28,7 @@
           title: 'Poor Credit History',
           description: 'Past debts making borrowing difficult',
           linkText: 'How we can help',
-          link: '/about-us/why-choose-us',
+          link: '/about-us#why-choose-us',
         },
       ]"
     />
