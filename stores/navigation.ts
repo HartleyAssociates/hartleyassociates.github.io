@@ -17,11 +17,6 @@ export const useNavigationStore = defineStore('navigationStore', {
             children: [],
           },
           {
-            text: 'Our Mission',
-            href: '/about-us#our-mission',
-            children: [],
-          },
-          {
             text: 'Our Team',
             href: '/about-us/our-team',
             children: [],
