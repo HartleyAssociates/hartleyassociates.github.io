@@ -38,21 +38,21 @@ const { marginTop, cards } = defineProps({
     }
   }
 
-  &.section {
-    @media only screen and (min-width: 800px) {
-      padding-top: 0;
-    }
-
-    @media only screen and (min-width: 1024px) {
-      padding-top: 0;
-    }
-  }
-
   &--minus {
     z-index: $zindex-grid-minus;
 
     @media only screen and (min-width: 800px) {
       margin-top: px-to-rem(-60px);
+    }
+
+    &.section {
+      @media only screen and (min-width: 800px) {
+        padding-top: 0;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        padding-top: 0;
+      }
     }
   }
 }
