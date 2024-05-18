@@ -12,5 +12,6 @@ declare global {
     icon: string
     title: string
     description: string
+    id?: string
   }
 }

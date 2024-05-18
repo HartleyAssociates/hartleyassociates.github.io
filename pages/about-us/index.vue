@@ -23,7 +23,7 @@
           title: '127 Valued Clients',
           description: 'have access our services in the last 2 years',
           linkText: 'Find out who they are',
-          link: '/about-us#why-choose-us',
+          link: '/about-us/testimonials',
         },
         {
           title: '35+ Advisers in wider network',

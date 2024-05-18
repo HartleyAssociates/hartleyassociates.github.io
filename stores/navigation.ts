@@ -13,7 +13,8 @@ export const useNavigationStore = defineStore('navigationStore', {
         children: [
           {
             text: 'Why Choose Us',
-            href: '/about-us#why-choose-us',
+            href: '/about-us',
+            hash: '#why-choose-us',
             children: [],
           },
           {
@@ -49,12 +50,14 @@ export const useNavigationStore = defineStore('navigationStore', {
         children: [
           {
             text: 'Your ISA',
-            href: '/investments#your-isa',
+            href: '/investments',
+            hash: '#your-isa',
             children: [],
           },
           {
             text: 'Planning For The Future',
-            href: '/investments#planning-for-the-future',
+            href: '/investments',
+            hash: '#planning-for-the-future',
             children: [],
           },
         ],
@@ -65,12 +68,14 @@ export const useNavigationStore = defineStore('navigationStore', {
         children: [
           {
             text: 'Planning for retirement',
-            href: '/pension#lanning-for-retirement',
+            href: '/pension',
+            hesh: 'planning-for-retirement',
             children: [],
           },
           {
             text: 'Estate Planning',
-            href: '/pension#state-planning',
+            href: '/pension',
+            hesh: 'state-planning',
             children: [],
           },
         ],
@@ -81,17 +86,20 @@ export const useNavigationStore = defineStore('navigationStore', {
         children: [
           {
             text: 'Residential Mortgages',
-            href: '/mortgages#residential-mortgages',
+            href: '/mortgages',
+            hash: '#residential-mortgages',
             children: [],
           },
           {
             text: 'Buy To Let Mortgages',
-            href: '/mortgages#buy-to-let-mortgages',
+            href: '/mortgages',
+            hash: '#buy-to-let-mortgages',
             children: [],
           },
           {
-            text: 'Specialist Mortgages',
-            href: '/mortgages#specialist-mortgages',
+            text: 'Mortgage Checklist',
+            href: '/mortgages',
+            hash: '#mortgage-checklist',
             children: [],
           },
         ],
@@ -101,23 +109,39 @@ export const useNavigationStore = defineStore('navigationStore', {
         href: '/protection',
         children: [
           {
+            text: 'Decreasing Term Assurance',
+            href: '/protection',
+            hash: '#decreasing-term-assurance',
+            children: [],
+          },
+          {
             text: 'Life Assurance',
-            href: '/protection#life-assurance',
+            href: '/protection',
+            hash: '#life-assurance',
             children: [],
           },
           {
             text: 'Critical Illness',
-            href: '/protection#critical-illness',
+            href: '/protection',
+            hash: '#critical-illness',
             children: [],
           },
           {
             text: 'Income Protection',
-            href: '/protection#income-protection',
+            href: '/protection',
+            hash: '#income-protection',
             children: [],
           },
           {
             text: 'Business Protection',
-            href: '/protection#business-protection',
+            href: '/protection',
+            hash: '#business-protection',
+            children: [],
+          },
+          {
+            text: 'Accident and Sickness Insurance',
+            href: '/protection',
+            hash: '#accident-and-sickness-insurance',
             children: [],
           },
         ],

@@ -1,5 +1,9 @@
 <template>
   <Container>
-    <h1>Investments Page</h1>
+    <Hero title="Investments" />
+
+    <RichText>
+      <p>Lorem ipsum</p>
+    </RichText>
   </Container>
 </template>

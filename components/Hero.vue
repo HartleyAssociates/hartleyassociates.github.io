@@ -50,7 +50,7 @@ const { img, alt, type, title, buttons } = defineProps({
       <div v-if="buttons.length > 0" class="hero__buttons">
         <NuxtLink
           v-for="(item, index) in buttons"
-          :key="`mainmenuLinks--${index}`"
+          :key="`buttons--${index}`"
           :class="`hero__button hero__button--${item.type}`"
           :to="item.href"
           :target="item.href.charAt(0) === '/' ? '_self' : '_blank'"

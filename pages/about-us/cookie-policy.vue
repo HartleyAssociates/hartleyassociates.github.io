@@ -1,5 +1,9 @@
 <template>
   <Container>
-    <h1>Cookie Policy Page</h1>
+    <Hero title="Cookie Policy" />
+
+    <RichText>
+      <p>Lorem ipsum</p>
+    </RichText>
   </Container>
 </template>

@@ -18,13 +18,13 @@
           image: '/2plan.jpg',
           title: '2PLAN Wealth Management',
           linkText: 'View More',
-          link: 'https://octofp.com/',
+          link: 'https://2plan.com/',
         },
         {
           image: '/octo.jpg',
           title: 'Octo Financial Planning',
           linkText: 'View More',
-          link: 'https://2plan.com/',
+          link: 'https://octofp.com/',
         },
         {
           image: '/harper.jpg',

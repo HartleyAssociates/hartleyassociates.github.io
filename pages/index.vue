@@ -38,6 +38,11 @@
       :cards="[
         {
           icon: 'arrow-right',
+          title: 'First Time buyers',
+          description: 'Guidance for getting onto the housing ladder.',
+        },
+        {
+          icon: 'arrow-right',
           title: 'Moving Home',
           description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
         },
@@ -59,11 +64,6 @@
         {
           icon: 'arrow-right',
           title: 'Protection your family',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
-        },
-        {
-          icon: 'arrow-right',
-          title: 'Lorem ipsum dolor',
           description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
         },
       ]"

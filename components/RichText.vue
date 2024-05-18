@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const { alignment } = defineProps({
+const { idProp, alignment } = defineProps({
+  idProp: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
   alignment: {
     type: String,
     default() {
@@ -13,7 +19,7 @@ const { alignment } = defineProps({
 </script>
 
 <template>
-  <SectionComponent class="rich-text">
+  <SectionComponent class="rich-text" :id-prop="idProp">
     <div :class="`rich-text__container rich-text__container--${alignment}`">
       <slot />
     </div>

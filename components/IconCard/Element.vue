@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { icon, title, description } = defineProps({
+const { icon, title, description, idProp } = defineProps({
   icon: {
     type: String,
     default() {
@@ -18,11 +18,19 @@ const { icon, title, description } = defineProps({
       return ''
     },
   },
+  idProp: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
 })
 </script>
 
 <template>
   <div class="icon-card">
+    <div v-if="idProp.length > 0" :id="idProp" class="icon-card__scrollTo" />
+
     <div class="icon-card__icon">
       <i :class="`fa-solid fa-${icon}`" />
     </div>
@@ -39,6 +47,8 @@ const { icon, title, description } = defineProps({
 
 <style lang="scss">
 .icon-card {
+  position: relative;
+  z-index: $zindex-zero;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -46,7 +56,22 @@ const { icon, title, description } = defineProps({
   align-items: flex-start;
   gap: px-to-rem(10px);
 
+  &__scrollTo {
+    position: absolute;
+    z-index: $zindex-zero;
+    width: 100%;
+    height: px-to-rem(1px);
+    left: 0;
+    top: px-to-rem(-140px);
+
+    @media only screen and (min-width: 800px) {
+      top: px-to-rem(-122px);
+    }
+  }
+
   &__icon {
+    position: relative;
+    z-index: $zindex-zero;
     width: px-to-rem(50px);
 
     i {
@@ -57,6 +82,8 @@ const { icon, title, description } = defineProps({
   }
 
   &__text {
+    position: relative;
+    z-index: $zindex-zero;
     @extend %ugc;
     flex: 0 0 calc(100% - #{px-to-rem(50px + 10px)});
   }

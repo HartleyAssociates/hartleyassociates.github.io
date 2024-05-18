@@ -1,5 +1,9 @@
 <template>
   <Container>
-    <h1>Contact Us Page</h1>
+    <Hero title="Contact Us" />
+
+    <RichText>
+      <p>Lorem ipsum</p>
+    </RichText>
   </Container>
 </template>

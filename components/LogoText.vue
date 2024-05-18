@@ -61,7 +61,7 @@
     }
 
     @media only screen and (min-width: 1024px) {
-      padding-top: px-to-rem(40px);
+      padding-top: px-to-rem(41px);
     }
 
     &.logo-text__col {

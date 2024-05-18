@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const {
+  idProp,
   containerWidth,
   textAlignment,
   imageType,
@@ -12,6 +13,12 @@ const {
   image,
   alt,
 } = defineProps({
+  idProp: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
   containerWidth: {
     type: String,
     default() {
@@ -93,6 +100,7 @@ const {
 <template>
   <SectionComponent
     :class="`image-text image-text--${textAlignment} image-text--${imageType} image-text--${containerWidth}`"
+    :id-prop="idProp"
   >
     <div class="image-text__container">
       <div

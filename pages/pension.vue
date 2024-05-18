@@ -1,5 +1,9 @@
 <template>
   <Container>
-    <h1>Pension Page</h1>
+    <Hero title="Protection" />
+
+    <RichText>
+      <p>Lorem ipsum</p>
+    </RichText>
   </Container>
 </template>

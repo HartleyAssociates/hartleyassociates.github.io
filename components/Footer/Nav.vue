@@ -23,9 +23,10 @@ const store = useNavigationStore()
             :href="childItem.href"
           >
             <NuxtLink
-              :to="childItem.href"
+              :to="{ path: childItem.href, hash: childItem.hash }"
               class="footer__nav-a footer__nav-a--subnav"
               active-class="footer__nav-a--active"
+              :external="childItem.hash && childItem.hash.length > 0"
             >
               {{ childItem.text }}
             </NuxtLink>

@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const { title, description, cards, rowSize } = defineProps({
+const { idProp, title, description, cards, rowSize } = defineProps({
+  idProp: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
   title: {
     type: String,
     default() {
@@ -31,7 +37,7 @@ const { title, description, cards, rowSize } = defineProps({
 </script>
 
 <template>
-  <SectionComponent class="icon-card-grid">
+  <SectionComponent class="icon-card-grid" :id-prop="idProp">
     <div class="icon-card-grid__wrapper">
       <div v-if="title.length > 0 || description.length > 0" class="icon-card-grid__text">
         <h2 v-if="title.length > 0" class="icon-card-grid__title" v-html="title" />
@@ -68,13 +74,21 @@ const { title, description, cards, rowSize } = defineProps({
     @include componentHeadingDefault;
   }
 
-  &__container {
-    margin-top: px-to-rem(20px);
-    padding: 0;
+  &__text {
+    max-width: px-to-rem(800px);
+    margin: 0 auto;
 
-    @media only screen and (min-width: 800px) {
-      margin-top: px-to-rem(50px);
+    & + .icon-card-grid__container {
+      margin-top: px-to-rem(20px);
+
+      @media only screen and (min-width: 800px) {
+        margin-top: px-to-rem(50px);
+      }
     }
+  }
+
+  &__container {
+    padding: 0;
   }
 }
 </style>

@@ -1,5 +1,9 @@
 <template>
   <Container>
-    <h1>Privacy Policy Page</h1>
+    <Hero title="Privacy Policy" />
+
+    <RichText>
+      <p>Lorem ipsum</p>
+    </RichText>
   </Container>
 </template>
