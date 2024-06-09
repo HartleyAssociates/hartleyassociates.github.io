@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <Hero title="Contact Us" />
+    <Hero title="Contact Us" img="/images/contact-us--banner.jpg" alt="Person on a tablet computer" />
 
     <RichText>
       <p>Lorem ipsum</p>

@@ -2,6 +2,8 @@
   <Container>
     <Hero
       type="home"
+      img="/images/MISC--extra-pic.jpg"
+      alt="Families union jack wellington boots in a row"
       title="Financial Planning <br/>and <i>Brokerage</i>"
       :buttons="[
         { title: 'Our Services', href: '/about-us', type: 'primary' },
@@ -13,18 +15,24 @@
       margin-top="minus"
       :cards="[
         {
+          image: '/images/MISC--self-employed.jpg',
+          alt: 'Person on a computer in an office',
           title: 'Self Employed Mortgages',
           description: 'Find a mortgage provider that suits',
           linkText: 'Know more',
           link: '/mortgages',
         },
         {
+          image: '/images/MISC--planning-retirement.jpg',
+          alt: 'Jar of coins with a plant growing in it',
           title: 'Retirement planning',
           description: 'Worried about the future',
           linkText: 'What we can offer',
           link: '/pension',
         },
         {
+          image: '/images/MISC--poor-credit-history.jpg',
+          alt: 'House, piggy bank, magnifying glass sitting on blueprints',
           title: 'Poor Credit History',
           description: 'Past debts making borrowing difficult',
           linkText: 'How we can help',
@@ -37,34 +45,39 @@
       title="Bespoke Financial planning <br/><i>to suit you</i>"
       :cards="[
         {
-          icon: 'arrow-right',
-          title: 'First Time buyers',
+          icon: 'house',
+          title: 'First Time Buyers',
           description: 'Guidance for getting onto the housing ladder.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'truck-fast',
           title: 'Moving Home',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description: 'Making a fresh start or moving to your forever home.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'piggy-bank',
           title: 'Saving for the future',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description: 'Let us help you achieve your long term goals.',
         },
         {
           icon: 'arrow-right',
           title: 'Transferring your pension',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description: 'Making your pension work you in a ever changing landscape.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'money-check-pen',
           title: 'Releasing money from home',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description: 'Access your equity present in your home.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'shield-halved',
           title: 'Protection your family',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description: 'Advising on suitable and cost effective protection solutions for you and your family.',
+        },
+        {
+          icon: 'chart-line-up',
+          title: 'Grow your portfolio',
+          description: ' Helping you getting the most out of your money whether it be property or personal savings .',
         },
       ]"
     />

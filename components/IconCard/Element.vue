@@ -32,7 +32,15 @@ const { icon, title, description, idProp } = defineProps({
     <div v-if="idProp.length > 0" :id="idProp" class="icon-card__scrollTo" />
 
     <div class="icon-card__icon">
-      <i :class="`fa-solid fa-${icon}`" />
+      <i
+        :class="`fa-duotone fa-${icon}`"
+        style="
+          --fa-primary-color: #4d7e3e;
+          --fa-secondary-color: #31c48d;
+          --fa-primary-opacity: 1;
+          --fa-secondary-opacity: 1;
+        "
+      />
     </div>
 
     <div class="icon-card__text">
@@ -77,7 +85,7 @@ const { icon, title, description, idProp } = defineProps({
     i {
       font-size: px-to-rem(40px);
       line-height: 1;
-      color: $secondary-colour;
+      // color: $secondary-colour;
     }
   }
 

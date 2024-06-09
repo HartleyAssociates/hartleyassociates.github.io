@@ -23,7 +23,6 @@ const { img, alt } = defineProps({
         width="1920"
         height="1080"
         :alt="alt"
-        sizes="100vw"
         densities="x1 x2"
         :placeholder="[1920, 1080]"
         fit="cover"

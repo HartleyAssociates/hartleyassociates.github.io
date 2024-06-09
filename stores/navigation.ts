@@ -49,15 +49,15 @@ export const useNavigationStore = defineStore('navigationStore', {
         href: '/investments',
         children: [
           {
-            text: 'Your ISA',
-            href: '/investments',
-            hash: '#your-isa',
-            children: [],
-          },
-          {
             text: 'Planning For The Future',
             href: '/investments',
             hash: '#planning-for-the-future',
+            children: [],
+          },
+          {
+            text: 'Your ISA',
+            href: '/investments',
+            hash: '#your-isa',
             children: [],
           },
         ],
@@ -69,13 +69,7 @@ export const useNavigationStore = defineStore('navigationStore', {
           {
             text: 'Planning for retirement',
             href: '/pension',
-            hesh: 'planning-for-retirement',
-            children: [],
-          },
-          {
-            text: 'Estate Planning',
-            href: '/pension',
-            hesh: 'state-planning',
+            hash: '#planning-for-retirement',
             children: [],
           },
         ],

@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <Hero title="About Us" />
+    <Hero title="About Us" img="/images/about-us--banner.jpg" alt="Birdseye view of a business meeting" />
 
     <LogoText>
       <p>
@@ -12,10 +12,12 @@
     </LogoText>
 
     <CardGrid
+      id-prop="why-choose-us"
+      title="Why Choose Us"
       :cards="[
         {
-          title: '50 Years of experience',
-          description: 'a vast knowledge base at you disposal',
+          title: '40+ Years of experience',
+          description: 'a vast knowledge base at your disposal',
           linkText: 'Who works for us',
           link: '/about-us/our-team',
         },
@@ -38,22 +40,22 @@
       title="How we work"
       :cards="[
         {
-          icon: 'arrow-right',
+          icon: 'briefcase',
           title: 'Consultation',
           description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'comments',
           title: 'Advice',
           description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'list-check',
           title: 'Implementation',
           description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'handshake',
           title: 'Ongoing Service',
           description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
         },

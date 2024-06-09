@@ -4,9 +4,7 @@
 
     <ImageText
       title="Howard Morgan"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in pharetra lacus. Morbi efficitur convallis sem, egestas euismod augue tristique ac."
-      link="https://google.com"
-      link-text="SPS Document"
+      description="Since starting in the industry in 1987 Howard has developed his knowledge in all areas of financial planning. Spending most of his time speaking to clients about their pensions and investment portfolios carrying out any agreed actions to help clients grow their money or access their pension."
       text-alignment="left"
       image-type="portrait"
       image="https://placehold.co/400x500"
@@ -15,9 +13,7 @@
 
     <ImageText
       title="Oliver Morgan"
-      description="Maecenas gravida in magna quis facilisis. In nec posuere nisl. Nunc sodales semper turpis a consequat. Nullam efficitur, arcu sit amet placerat maximus, leo quam blandit lectus, et tristique nunc mauris id nulla."
-      link="https://google.com"
-      link-text="SPS Document"
+      description="With 10 years of experience in the finance industry, Oliver has developed a wealth of technical knowledge in all areas of financial planning. He specialises in mortgage advice, helping clients with a diverse range of needs. Whether it be first time buyers getting their first step on the property ladder or helping portfolio landlords achieve their goal, regarding their portfolio."
       text-alignment="right"
       image-type="portrait"
       image="https://placehold.co/400x500"
@@ -26,7 +22,7 @@
 
     <ImageText
       title="Jason Summerfield"
-      description="Quisque pulvinar leo neque, sit amet consectetur neque bibendum nec. Aenean tincidunt, ligula eget mattis sodales, nisi lorem laoreet augue, vel porta lorem odio nec velit."
+      description="Jason acts as our link to the wider financial planning network. Jason founded OCTO FP after having held several senior positions within the financial industry. He has a strong link to Hartley associates and helps us access the wider world of financial planning when needed."
       link="https://octofp.com/jason-summerfield/"
       link-text="OCTO FP"
       link-two="https://2plan.com/"

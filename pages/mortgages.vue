@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <Hero title="Mortgages" />
+    <Hero title="Mortgages" img="/images/mortgage--banner.jpg" alt="Five red monopoly houses sitting on a table" />
 
     <RichText id-prop="residential-mortgages">
       <p>
@@ -11,18 +11,18 @@
       </p>
     </RichText>
 
-    <LargeImage />
+    <LargeImage img="/images/mortgage--checklist.jpg" alt="Six post-it notes" />
 
     <IconCardGrid
       :cards="[
         {
-          icon: 'arrow-right',
-          title: 'First time Buyer',
+          icon: 'house',
+          title: 'First Time Buyers',
           description:
             'Purchasing a home as a first time buyer can feel overwhelming. Even with all the resources and guides online it can still help to talk to someone. We aim to make things as understandable and straightforward to help you get your foot onto the housing ladder.',
         },
         {
-          icon: 'arrow-right',
+          icon: 'truck-fast',
           title: 'Moving Home',
           description:
             'Whether downsizing or moving into your new home we can help. We have access to the whole mortgage market and specialist deals. Whether this new property is a new build or non standard construction we are here to help.',
@@ -52,6 +52,8 @@
     />
 
     <ImageText
+      image="/images/mortgage--two.jpg"
+      alt="People dancing during moving house"
       title="Fees."
       description="There may be a mortgage advice fee. For a single mortgage you will not pay more than £495 as a broker fee. The actual amount you will pay will entirely depend on your circumstances. All initial consultation meetings are carried out free of charge."
     />
@@ -78,12 +80,14 @@
     />
 
     <ImageText
+      image="/images/mortgage--three.jpg"
+      alt="Multiple houses"
       title="Fees."
       description="There may be a mortgage advice fee. For a single mortgage you will not pay more than £495 as a broker fee. The actual amount you will pay will entirely depend on your circumstances. All initial consultation meetings are carried out free of charge."
       text-alignment="right"
     />
 
-    <LargeImage />
+    <LargeImage img="/images/mortgage--checklist-alt.jpg" alt="Person writing on a piece of paper" />
 
     <IconCardGrid
       id-prop="mortgage-checklist"

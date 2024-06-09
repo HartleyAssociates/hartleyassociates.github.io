@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <Hero title="Our Network" />
+    <Hero title="Our Network" img="/images/our-network--banner.jpg" alt="Business people shaking hands" />
 
     <RichText>
       <p>

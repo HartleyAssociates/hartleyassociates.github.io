@@ -1,8 +1,12 @@
 <template>
   <Container>
-    <Hero title="Protection" />
+    <Hero
+      title="Protection"
+      img="/images/protection--banner.jpg"
+      alt="Parents and child standing in the tide at a beach"
+    />
 
-    <RichText id-prop="residential-mortgages">
+    <RichText>
       <p>
         While we understand the need for our car, our home and our travel arrangements we often forget the need to
         ensure that our debts, our income and our family are protected in the event of ill health or death. Below are
@@ -11,6 +15,8 @@
         <NuxtLink to="/contact-us">find out more</NuxtLink>.
       </p>
     </RichText>
+
+    <LargeImage img="/images/protection--two.jpg" alt="Person on computer with a stethoscope sitting next to it" />
 
     <IconCardGrid
       :cards="[
