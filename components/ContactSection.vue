@@ -119,7 +119,7 @@ const contactDetails = useContactDetails()
       }
 
       br {
-        @media only screen and (max-width: 799px) {
+        @media only screen and (max-width: 850px) {
           display: none;
         }
       }
