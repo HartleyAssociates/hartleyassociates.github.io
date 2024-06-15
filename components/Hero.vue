@@ -5,6 +5,10 @@ interface HeroButtonType {
   type: 'primary' | 'secondary' | 'tertiary'
 }
 
+import { onMounted, ref } from 'vue'
+
+const hero = ref(null)
+
 const { img, alt, type, title, buttons } = defineProps({
   img: {
     type: String,
@@ -40,10 +44,34 @@ const { img, alt, type, title, buttons } = defineProps({
     },
   },
 })
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return
+        }
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add('hero--animate-delay')
+          observer.observe(entry?.target)
+        }
+      })
+    },
+    {
+      threshold: 0.5,
+    },
+  )
+
+  if (hero?.value) {
+    observer.observe(hero.value)
+  }
+})
 </script>
 
 <template>
-  <section :class="`hero hero--${type}`">
+  <section :class="`hero hero--${type}`" ref="hero">
     <div class="hero__content">
       <h1 v-if="title.length" class="hero__title" v-html="title" />
 
@@ -95,6 +123,13 @@ const { img, alt, type, title, buttons } = defineProps({
     @include componentHeadingLarge;
     color: $white-colour;
     margin: 0;
+    opacity: 0;
+    transition: opacity $animation--time ease-in-out;
+    transition-delay: $animation--delay;
+
+    .hero.hero--animate-delay & {
+      opacity: 1;
+    }
   }
 
   &__buttons {
@@ -104,6 +139,15 @@ const { img, alt, type, title, buttons } = defineProps({
     justify-content: flex-start;
     align-items: center;
     margin-top: px-to-rem(25px);
+    opacity: 0;
+    transform: translateY($animation--transform);
+    transition: all $animation--time ease-in-out;
+    transition-delay: ($animation--delay * 1.5);
+
+    .hero.hero--animate-delay & {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   &__button {
