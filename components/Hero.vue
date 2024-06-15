@@ -140,7 +140,7 @@ onMounted(() => {
     align-items: center;
     margin-top: px-to-rem(25px);
     opacity: 0;
-    transform: translateY($animation--transform);
+    transform: translateY(px-to-rem($animation--transform));
     transition: all $animation--time ease-in-out;
     transition-delay: ($animation--delay * 1.5);
 

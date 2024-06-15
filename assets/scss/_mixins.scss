@@ -90,5 +90,31 @@
         flex: 0 0 calc(25% - #{px-to-rem(math.div(150px, 4))});
       }
     }
+
+    &--mob-order {
+      &-1 {
+        @media only screen and (max-width: 799px) {
+          order: 1;
+        }
+      }
+
+      &-2 {
+        @media only screen and (max-width: 799px) {
+          order: 2;
+        }
+      }
+
+      &-3 {
+        @media only screen and (max-width: 799px) {
+          order: 3;
+        }
+      }
+
+      &-4 {
+        @media only screen and (max-width: 799px) {
+          order: 4;
+        }
+      }
+    }
   }
 }

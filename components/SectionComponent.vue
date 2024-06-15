@@ -50,7 +50,7 @@ onMounted(() => {
   z-index: $zindex-zero;
   padding: px-to-rem($section-padding--mobile) 0;
   opacity: 0;
-  transform: translateY($animation--transform);
+  transform: translateY(px-to-rem($animation--transform));
 
   @media (prefers-reduced-motion) {
     opacity: 1 !important;

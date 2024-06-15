@@ -1,7 +1,7 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY($animation--transform);
+    transform: translateY(px-to-rem($animation--transform));
   }
 
   100% {
