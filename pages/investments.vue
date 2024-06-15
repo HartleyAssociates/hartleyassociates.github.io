@@ -21,11 +21,7 @@
 
     <RichText id-prop="your-isa">
       <h2>Your ISA</h2>
-      <p>The Term ISA in the UK stands for an ‘Individual Savings Account‘</p>
-    </RichText>
-
-    <RichText>
-      <h3>What is a stocks and shares ISA</h3>
+      <p>The Term ISA in the UK stands for an 'Individual Savings Account'‘'</p>
       <p>
         An investment account that is tax-efficient is a stocks and shares ISA, commonly referred to as an investment
         ISA. This means that, up to a specific amount, you are not required to pay <u>income tax</u> or

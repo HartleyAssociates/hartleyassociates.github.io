@@ -48,27 +48,28 @@
         {
           icon: 'briefcase',
           title: 'Consultation',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description: 'Arrange a meeting with us with no strings attached and find out how we can help.',
         },
         {
           icon: 'comments',
           title: 'Advice',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description:
+            'After carrying out a fact find and reviewing your personal situation we can begin to form a suitable recommendation.',
         },
         {
           icon: 'list-check',
           title: 'Implementation',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description:
+            'Once the recommendation has been agreed upon we can use our expertise to deliver the service required. Whether sourcing an acceptable mortgage offer or topping up your pension account.',
         },
         {
           icon: 'handshake',
           title: 'Ongoing Service',
-          description: 'Pellentesque eleifend libero ut tempus bibendum. Phasellus nunc purus, consequat.',
+          description:
+            'Either through annual reviews or other methods we can ensure that the recommendation provided is still suitable for your situation. We will be able to make changes and research new scenarios based on your changing needs.',
         },
       ]"
       :row-size="2"
     />
-
-    <AccreditationsIcons />
   </Container>
 </template>

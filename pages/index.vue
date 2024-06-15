@@ -2,7 +2,7 @@
   <Container>
     <Hero
       type="home"
-      img="/images/MISC--extra-pic.jpg"
+      img="/images/about-us--small.jpg"
       alt="Families union jack wellington boots in a row"
       title="Financial Planning <br/>and <i>Brokerage</i>"
       :buttons="[
@@ -55,11 +55,6 @@
           description: 'Making a fresh start or moving to your forever home.',
         },
         {
-          icon: 'piggy-bank',
-          title: 'Saving for the future',
-          description: 'Let us help you achieve your long term goals.',
-        },
-        {
           icon: 'arrow-right',
           title: 'Transferring your pension',
           description: 'Making your pension work you in a ever changing landscape.',
@@ -87,6 +82,7 @@
       description="Companies seem to dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success at realizing the company is going in the wrong direction."
       link="/contact-us"
       link-text="Get a free quote"
+      image="/images/about-us--small.jpg"
     />
 
     <TestimonialsListing type="homepage" />

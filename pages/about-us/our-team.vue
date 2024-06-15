@@ -9,6 +9,8 @@
       image-type="portrait"
       image="https://placehold.co/400x500"
       container-width="slender"
+      link="https://linkedin.com/"
+      link-text="Linkedin"
     />
 
     <ImageText
@@ -16,8 +18,10 @@
       description="With 10 years of experience in the finance industry, Oliver has developed a wealth of technical knowledge in all areas of financial planning. He specialises in mortgage advice, helping clients with a diverse range of needs. Whether it be first time buyers getting their first step on the property ladder or helping portfolio landlords achieve their goal, regarding their portfolio."
       text-alignment="right"
       image-type="portrait"
-      image="https://placehold.co/400x500"
+      image="/images/ollie.jpg"
       container-width="slender"
+      link="https://www.linkedin.com/in/oliver-morgan-bb5b611a7/"
+      link-text="Linkedin"
     />
 
     <ImageText
@@ -29,7 +33,7 @@
       link-two-text="2PLAN"
       text-alignment="left"
       image-type="portrait"
-      image="https://placehold.co/400x500"
+      image="/images/jason.jpg"
       container-width="slender"
     />
   </Container>
