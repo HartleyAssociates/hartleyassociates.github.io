@@ -117,6 +117,12 @@ const contactDetails = useContactDetails()
       i {
         color: $primary-colour;
       }
+
+      br {
+        @media only screen and (max-width: 799px) {
+          display: none;
+        }
+      }
     }
 
     &-p {
