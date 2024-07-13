@@ -79,7 +79,7 @@ export default defineNuxtConfig({
       ],
       address: {
         streetAddress: 'Unit G3 Ash House Business Centre, Ash Road, Longfield, Kent DA3 8JD, GB',
-        addressLocality: 'Lomgfield',
+        addressLocality: 'Longfield',
         addressRegion: 'Kent',
         postalCode: 'DA3 8JD',
         addressCountry: 'GB',
