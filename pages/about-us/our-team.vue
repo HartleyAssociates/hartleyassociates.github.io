@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  description: 'Meet our team members at Hartley Associates.',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="Our Team" img="/images/our-team--banner.jpg" alt="Multi-coloured plastic board game pieces" />

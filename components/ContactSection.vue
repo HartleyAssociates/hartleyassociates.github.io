@@ -23,7 +23,7 @@ const contactDetails = useContactDetails()
         <div class="contact-section__content">
           <h2 class="contact-section__content-title">
             Get in Touch With Us And<br />
-            We’ll <i>Help Your Business!</i>
+            We’ll <i>Help You!</i>
           </h2>
 
           <p class="contact-section__content-p">

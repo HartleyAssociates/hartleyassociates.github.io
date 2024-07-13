@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  description:
+    'At Hartley Associates we run a dedicated mortgage broker service covering the whole of the UK. We aim to work closely with you on your mortgage journey helping you in understanding your mortgage journey and find a solution that suits your needs.',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="Mortgages" img="/images/mortgage--banner.jpg" alt="Five red monopoly houses sitting on a table" />

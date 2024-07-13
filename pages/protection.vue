@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  description:
+    'While we understand the need for our car, our home and our travel arrangements we often forget the need to ensure that our debts, our income and our family are protected in the event of ill health or death.',
+})
+</script>
+
 <template>
   <Container>
     <Hero

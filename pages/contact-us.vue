@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  description: '',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="Contact Us" img="/images/contact-us--banner.jpg" alt="Person on a tablet computer" />

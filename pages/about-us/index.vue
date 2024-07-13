@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  description: 'Hartley Associates is a family run financial advice and planning firm. We have over 40 years of experience under one roof. From investment and retirement planning to helping a young couple get that first step onto the housing ladder. We pride ourselves on our client centric approach and successful results carefully tailored to the clients needs.',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="About Us" img="/images/about-us--banner.jpg" alt="Birdseye view of a business meeting" />

@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  description:
+    'Our advice process will help you to understand the wide range of choices once you reach retirement age, including annuities and investments. You are able to benefit from bespoke personal financial advice rather than generic information out there.',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="Pension" img="/images/pension--banner.jpg" alt="Two people sitting outside at sunset" />

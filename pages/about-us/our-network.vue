@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  description: '',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="Our Network" img="/images/our-network--banner.jpg" alt="Business people shaking hands" />

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  description: '',
+})
+</script>
+
 <template>
   <Container>
     <Hero title="Privacy Policy" />

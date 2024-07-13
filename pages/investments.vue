@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  description:
+    'There are many different methods of achieving long term financial goals - be it investing for income or growth in a range of assets, or reorganising finances in a cost effective and tax efficient method.',
+})
+</script>
+
 <template>
   <Container>
     <Hero
