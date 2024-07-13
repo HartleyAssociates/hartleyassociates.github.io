@@ -194,6 +194,7 @@ const {
 
   &__image {
     display: block;
+    @include imageFilter;
 
     img {
       display: block;

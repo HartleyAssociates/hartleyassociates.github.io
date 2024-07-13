@@ -118,3 +118,14 @@
     }
   }
 }
+
+@mixin imageFilter {
+  // background: $primary-colour;
+  background: $black-colour;
+  // background: linear-gradient(0deg, rgba($primary-colour, 1) 60%, rgba($black-colour, 1) 100%);
+
+  img {
+    filter: grayscale(1);
+    opacity: 0.8;
+  }
+}

@@ -87,6 +87,7 @@ const { image, title, description, linkText, link } = defineProps({
     width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+    @include imageFilter;
 
     img {
       display: block;

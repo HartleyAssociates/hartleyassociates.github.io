@@ -179,6 +179,7 @@ onMounted(() => {
     z-index: $zindex-zero;
     width: 100%;
     height: px-to-rem(250px);
+    @include imageFilter;
 
     @media only screen and (min-width: 800px) {
       height: px-to-rem(400px);

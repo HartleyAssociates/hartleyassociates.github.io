@@ -39,6 +39,7 @@ const { img, alt } = defineProps({
   &__container {
     @extend %containerDefault;
     max-width: px-to-rem(980px);
+    @include imageFilter;
   }
 
   img {
