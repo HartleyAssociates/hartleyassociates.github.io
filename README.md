@@ -73,8 +73,3 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Deploy site to github pages
-
-1. Generate with `npm run generate`
-2. Deploy with `npm run deploy`
