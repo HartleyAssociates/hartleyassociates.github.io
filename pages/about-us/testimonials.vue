@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <Hero title="Testimonials" />
+    <Hero title="Testimonials" img="/images/testimonials--banner.jpg" alt="Five gold stars" />
 
     <TestimonialsListing type="listing" />
   </Container>

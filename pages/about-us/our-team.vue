@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <Hero title="Our Team" />
+    <Hero title="Our Team" img="/images/our-team--banner.jpg" alt="Multi-coloured plastic board game pieces" />
 
     <ImageText
       title="Howard Morgan"
@@ -9,7 +9,7 @@
       image-type="portrait"
       image="https://placehold.co/400x500"
       container-width="slender"
-      link="https://linkedin.com/"
+      link="https://www.linkedin.com/in/howard-morgan-887611319/"
       link-text="Linkedin"
     />
 

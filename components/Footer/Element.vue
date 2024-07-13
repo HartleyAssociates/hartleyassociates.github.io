@@ -1,32 +1,66 @@
 <template>
   <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__col footer__col--meta">
-        <FooterMeta />
-      </div>
+    <section class="footer__top">
+      <div class="footer__container">
+        <div class="footer__col footer__col--meta">
+          <FooterMeta />
+        </div>
 
-      <div class="footer__col footer__col--nav">
-        <FooterNav />
+        <div class="footer__col footer__col--nav">
+          <FooterNav />
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="footer__bottom">
+      <div class="footer__container">
+        <Blurb />
+      </div>
+    </section>
   </footer>
 </template>
 
 <style lang="scss">
+@use 'sass:color';
 .footer {
   position: relative;
   z-index: $zindex-zero;
-  padding: px-to-rem(20px) 0 px-to-rem(40px);
-  background: $black-colour;
   margin: auto 0 0;
 
-  @media only screen and (min-width: 800px) {
-    padding: px-to-rem(50px) 0 px-to-rem(75px);
+  &__top {
+    padding: px-to-rem(20px) 0 px-to-rem(40px);
+    background: $black-colour;
+
+    @media only screen and (min-width: 800px) {
+      padding: px-to-rem(50px) 0 px-to-rem(75px);
+    }
+  }
+
+  &__bottom {
+    background: color.adjust($black-colour, $lightness: -3.5%);
+    padding: px-to-rem(15px) 0;
+
+    p {
+      color: $white-colour;
+      font-size: px-to-rem(13px);
+      margin: 0;
+      text-align: justify;
+      padding: 0 px-to-rem(10px);
+
+      a {
+        color: $offwhite-colour;
+
+        &:hover,
+        &:focus {
+          color: $white-colour;
+        }
+      }
+    }
   }
 
   &__container {
     @extend %containerDefault;
-    padding: 0 px-to-rem(10px);
+    padding: 0 px-to-rem(5px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

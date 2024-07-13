@@ -4,9 +4,9 @@ export const useContactDetails = () => {
     multiLineAddress: 'Unit G3 Ash House Business Centre, <br />Ash Road, <br />Longfield, Kent DA3 8JD, GB',
     linkList: [
       {
-        link: 'tel:+447910729832',
+        link: 'tel:+447468962855',
         text: 'Call Us',
-        altText: '+44 7910 729832',
+        altText: '+44 7468 962855',
         type: 'phone',
       },
       {
