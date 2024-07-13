@@ -56,15 +56,117 @@ export default defineNuxtConfig({
   schemaOrg: {
     enabled: true,
     identity: {
-      type: 'Organization',
+      type: 'LocalBusiness',
       name: SITE_NAME,
       url: SITE_URL,
-      logo: `${SITE_URL}/logo.png`,
+      logo: {
+        "@type": 'ImageObject',
+        url: `${SITE_URL}/logo.png`,
+        width: 1500,
+        height: 287
+      },
+      image: {
+        "@type": 'ImageObject',
+        url: `${SITE_URL}/hartley-associates-services.jpg`,
+        width: 1200,
+        height: 630
+      },
       sameAs: [
         'https://find-and-update.company-information.service.gov.uk/company/11632011',
         'https://uk.linkedin.com/company/hartleyassociates',
+        'https://www.facebook.com/HartleyAssociatesinfo'
       ],
-      taxID: 'ksdjbfksdjbf',
+      address: {
+        streetAddress: 'Unit G3 Ash House Business Centre, Ash Road, Longfield, Kent DA3 8JD, GB',
+        addressLocality: 'Lomgfield',
+        addressRegion: 'Kent',
+        postalCode: 'DA3 8JD',
+        addressCountry: 'GB',
+      },
+      geo: {
+        "@type": 'geo',
+        latitude: '51.3663183',
+        longitude: '0.3013141'
+      },
+      contactPoint: {
+        "@type": 'ContactPoint',
+        telephone: '+44 7910 729832',
+        availableLanguage: [
+          'English'
+        ],
+        contactType: 'enquiries',
+        email: 'enquires@hartleyassociates.info',
+      },
+      taxID: '11632011',
+      vatID: '11632011',
+      openingHours: 'Mo 09:00-17:00 Tu 09:00-17:00 We 09:00-17:00 Th 09:00-17:00 Fr 09:00-17:00',
+      telephone: '+44 7910 729832',
+      email: 'enquires@hartleyassociates.info',
+      currenciesAccepted: 'GBP',
+      paymentAccepted: 'Cash, Credit Card, Cheque',
+      areaServed: 'Longfield, Gravesend, Dartford, Darenth, Greenhithe, Swanley, Sevenoaks, Tonbridge, Bromley',
+      foundingDate: '01/11/2022',
+      keywords: 'Finance, Mortgages, Buy to lets, Insurance, poor credit, investing, retirement',
+      founder: [
+        {
+          "@type": 'Person',
+          givenName: 'Oliver',
+          familyName: 'Morgan',
+          honorificSuffix: 'DipFA Cert CII (MP) ER1',
+          image: `${SITE_URL}/images/ollie.jpg`,
+          sameAs: [
+            'https://www.linkedin.com/in/oliver-morgan-bb5b611a7/'
+          ],
+          jobTitle: {
+            "@type": 'DefinedTerm',
+            name: 'Financial Planner',
+            sameAs: [
+              'https://resources.workable.com/financial-planner-job-description',
+              'https://nationalcareers.service.gov.uk/job-profiles/financial-adviser'
+            ]
+          }
+        },
+        {
+          "@type": 'Person',
+          givenName: 'Howard',
+          familyName: 'Morgan',
+          honorificSuffix: 'DipFFS Cert CII (MP)',
+          image: `https://placehold.co/400x500`,
+          sameAs: [
+            'https://www.linkedin.com/'
+          ],
+          jobTitle: {
+            "@type": 'DefinedTerm',
+            name: 'Financial Planner',
+            sameAs: [
+              'https://resources.workable.com/financial-planner-job-description',
+              'https://nationalcareers.service.gov.uk/job-profiles/financial-adviser'
+            ]
+          }
+        },
+      ],
+      employee: [
+        {
+          "@type": 'Person',
+          givenName: 'Jason',
+          familyName: 'Summerfield',
+          honorificSuffix: 'DipFA',
+          image: `${SITE_URL}/images/jason.jpg`,
+          sameAs: [
+            'https://www.linkedin.com/in/jason-summerfield-24254720/',
+            'https://octofp.com/jason-summerfield/'
+          ],
+          jobTitle: {
+            "@type": 'DefinedTerm',
+            name: 'Director of Octo Financial Planning',
+            alternateName: 'Financial Planner',
+            sameAs: [
+              'https://resources.workable.com/financial-planner-job-description',
+              'https://nationalcareers.service.gov.uk/job-profiles/financial-adviser'
+            ]
+          },
+        },
+      ]
     },
   },
   linkChecker: {
