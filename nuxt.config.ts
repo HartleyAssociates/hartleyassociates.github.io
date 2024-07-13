@@ -22,9 +22,8 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      // TODO: remove when going live
       meta: [
-        { name: 'robots', content: 'noindex, nofollow' },
+        // { name: 'robots', content: 'noindex, nofollow' },
         { name: 'keywords', content: 'Finance, Mortgages, Buy to lets, Insurance, poor credit, investing, retirement' },
       ],
       script: [{ src: 'https://kit.fontawesome.com/f1d1dadb8c.js', crosscrossorigin: 'anonymous' }],
@@ -50,8 +49,7 @@ export default defineNuxtConfig({
     enabled: true,
     sitemap: '/sitemap.xml',
     credits: true,
-    // TODO: remove on go live
-    disallow: ['/'],
+    // disallow: ['/'],
   },
   seoExperiments: {
     enabled: true,
