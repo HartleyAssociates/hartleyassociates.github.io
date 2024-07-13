@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  description: '',
+  description:
+    'At Hartley Associates, we are driven by you, our clients. We believe in delivering a personalised and bespoke approach shaped around your specific needs.',
 })
 </script>
 
