@@ -1,9 +1,15 @@
 <script setup lang="ts">
-const { idProp } = defineProps({
+const { idProp, submitted } = defineProps({
   idProp: {
     type: String,
     default() {
       return ''
+    },
+  },
+  submitted: {
+    type: Boolean,
+    default() {
+      return false
     },
   },
 })
@@ -16,21 +22,33 @@ const contactDetails = useContactDetails()
   <SectionComponent class="contact-section" :id-prop="idProp">
     <div class="contact-section__container">
       <div class="contact-section__col contact-section__col--2 contact-section__col--mob-order-2">
-        <div class="contact-section__contact-form" />
+        <div class="contact-section__contact-form">
+          <ContactForm v-if="!submitted" />
+
+          <div v-else class="contact-section__contact-form-text">
+            <h2 class="contact-section__content-title">Thank You!</h2>
+
+            <p class="contact-section__content-p">We've received your submission.</p>
+
+            <p class="contact-section__content-p">We will get back to you as soon as possible.</p>
+          </div>
+        </div>
       </div>
 
       <div class="contact-section__col contact-section__col--2 contact-section__col--mob-order-1">
         <div class="contact-section__content">
-          <h2 class="contact-section__content-title">
-            Get in Touch With Us And<br />
-            We’ll <i>Help You!</i>
-          </h2>
+          <p class="contact-section__content-p">
+            At Hartley Associates, we are driven by you, our clients. We believe in delivering a personalised and
+            bespoke approach shaped around your specific needs.
+          </p>
 
           <p class="contact-section__content-p">
-            We are a trusted analytical partner to the financial services, gaming, airlines and loyalty industries and
-            are constantly formulating analytic solutions for large banks, credit unions, casinos and travel companies
-            throughout the globe.
+            We value face-to-face communication and so, whenever we can, we will do our best to meet our clients in
+            person. Of course, we recognise that this isn't always possible, in which case, a virtual meeting or phone
+            call can be arranged.
           </p>
+
+          <p class="contact-section__content-p">Whatever your financial query, contact us today.</p>
 
           <ul class="contact-section__content-ul">
             <li
@@ -101,11 +119,29 @@ const contactDetails = useContactDetails()
 
   &__contact-form {
     box-shadow: 0 px-to-rem(10px) px-to-rem(50px) 0 rgba($black-colour, 0.25);
-    background-color: $primary-colour;
+    background: $black-colour;
     width: 100%;
-    height: px-to-rem(500px);
+    min-height: px-to-rem(500px);
     max-width: px-to-rem(400px);
     margin: 0 auto;
+
+    @media only screen and (max-width: 799px) {
+      min-height: 0;
+    }
+  }
+
+  &__contact-form-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    padding: px-to-rem(55px) px-to-rem(35px);
+    @extend %ugc;
+
+    @media only screen and (max-width: 799px) {
+      padding: px-to-rem(20px);
+    }
   }
 
   &__content {
