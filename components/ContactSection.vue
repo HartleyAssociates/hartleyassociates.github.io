@@ -121,12 +121,12 @@ const contactDetails = useContactDetails()
     box-shadow: 0 px-to-rem(10px) px-to-rem(50px) 0 rgba($black-colour, 0.25);
     background: $black-colour;
     width: 100%;
-    min-height: px-to-rem(500px);
+    height: px-to-rem(500px);
     max-width: px-to-rem(400px);
     margin: 0 auto;
 
     @media only screen and (max-width: 799px) {
-      min-height: 0;
+      min-height: auto;
     }
   }
 
