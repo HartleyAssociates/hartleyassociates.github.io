@@ -38,8 +38,6 @@ const contactDetails = useContactDetails()
         <i :class="`fa-brands fa-${item.fa}`" />
       </NuxtLink>
     </nav>
-
-    <p class="footer__meta-copyright">&copy; {{ new Date().getFullYear() }} Hartley Associates Ltd</p>
   </section>
 </template>
 
