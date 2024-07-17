@@ -149,6 +149,7 @@ const contactDetails = useContactDetails()
 
     &-title {
       margin-bottom: px-to-rem(30px);
+      color: $white-colour;
 
       i {
         color: $primary-colour;
