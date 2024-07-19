@@ -78,11 +78,13 @@
     />
 
     <ImageText
-      title="How We Help Businesses <i>Keep Running and Healthy.</i>"
-      description="Companies seem to dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success at realizing the company is going in the wrong direction."
+      title=" Individually tailored advice <i>Expert mortgage planning</i>"
+      description="At Hartley Assoicates we have over 20 years of experience of helping clients reach their financial goals whether this be saving for retirement, purchasing their dream family home or maximising their investment portfolio. With over 90 lenders and whole of market access to pensions and investment planning we are sure to find the correct deal for you."
       link="/contact-us"
-      link-text="Get a free quote"
-      image="/images/about-us--small.jpg"
+      link-text="Contact us"
+      image="/images/finance.jpg"
+      image-height="1058"
+      image-width="1756"
     />
 
     <TestimonialsListing type="homepage" />

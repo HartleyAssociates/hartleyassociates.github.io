@@ -13,7 +13,7 @@ useSeoMeta({
       description="Since starting in the industry in 1987 Howard has developed his knowledge in all areas of financial planning. Spending most of his time speaking to clients about their pensions and investment portfolios carrying out any agreed actions to help clients grow their money or access their pension."
       text-alignment="left"
       image-type="portrait"
-      image="https://placehold.co/400x500"
+      image="/images/howard.jpg"
       container-width="slender"
       link="https://www.linkedin.com/in/howard-morgan-887611319/"
       link-text="Linkedin"

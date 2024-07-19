@@ -33,13 +33,8 @@ export const useNavigationStore = defineStore('navigationStore', {
             children: [],
           },
           {
-            text: 'Privacy Policy',
-            href: '/about-us/privacy-policy',
-            children: [],
-          },
-          {
-            text: 'Cookie Policy',
-            href: '/about-us/cookie-policy',
+            text: 'Privacy & Cookie Policy',
+            href: '/about-us/privacy-cookie-policy',
             children: [],
           },
         ],

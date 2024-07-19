@@ -131,7 +131,7 @@ export default defineNuxtConfig({
           givenName: 'Howard',
           familyName: 'Morgan',
           honorificSuffix: 'DipFFS Cert CII (MP)',
-          image: `https://placehold.co/400x500`,
+          image: `${SITE_URL}/images/howard.jpg`,
           sameAs: [
             'https://www.linkedin.com/in/howard-morgan-887611319/',
           ],

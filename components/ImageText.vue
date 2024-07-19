@@ -11,6 +11,8 @@ const {
   linkTwo,
   linkTwoText,
   image,
+  imageHeight,
+  imageWidth,
   alt,
 } = defineProps({
   idProp: {
@@ -88,6 +90,18 @@ const {
       return 'https://placehold.co/550x300'
     },
   },
+  imageHeight: {
+    type: String,
+    default() {
+      return '300'
+    },
+  },
+  imageWidth: {
+    type: String,
+    default() {
+      return '550'
+    },
+  },
   alt: {
     type: String,
     default() {
@@ -131,11 +145,11 @@ const {
       <div v-if="image.length > 0" class="image-text__image image-text__col image-text__col--2">
         <NuxtImg
           :src="image"
-          :width="imageType !== 'portrait' ? '550' : '400'"
-          :height="imageType !== 'portrait' ? '300' : '500'"
+          :width="imageType !== 'portrait' ? imageWidth : '400'"
+          :height="imageType !== 'portrait' ? imageHeight : '500'"
           :alt="alt"
           densities="x1 x2"
-          :placeholder="imageType !== 'portrait' ? [550, 300] : [400, 500]"
+          :placeholder="imageType !== 'portrait' ? [Number(imageWidth), Number(imageHeight)] : [400, 500]"
           format="webp"
           quality="80"
           loading="lazy"
