@@ -22,7 +22,7 @@ const testimonials = type === 'homepage' ? store.getTestimonials() : store.getAl
         :key="`testimonials--${index}`"
         class="testimonials__col testimonials__col--2"
       >
-        <TestimonialsItem :text="item.text" :name="item.name" :title="item.title" />
+        <TestimonialsItem :text="item?.text ?? ''" :name="item?.name ?? ''" :title="item?.title ?? ''" />
       </div>
     </div>
   </SectionComponent>
