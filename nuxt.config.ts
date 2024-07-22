@@ -7,6 +7,7 @@ const SITE_URL = 'https://hartleyassociates.github.io'  // 'https://hartleyassoc
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/scss/main.scss'],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -29,22 +31,28 @@ export default defineNuxtConfig({
       script: [{ src: 'https://kit.fontawesome.com/f1d1dadb8c.js', crosscrossorigin: 'anonymous' }],
     },
   },
+
   modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxt/image', '@nuxt/fonts', '@zadigetvoltaire/nuxt-gtm', '@pinia/nuxt'],
+
   site: {
     url: SITE_URL,
     name: SITE_NAME,
     description: 'Welcome Hartley Associates',
     defaultLocale: 'en',
   },
+
   seo: {
     redirectToCanonicalSiteUrl: true,
   },
+
   ogImage: {
     enabled: false,
   },
+
   sitemap: {
     enabled: true,
   },
+
   robots: {
     enabled: true,
     sitemap: '/sitemap.xml',
@@ -52,9 +60,11 @@ export default defineNuxtConfig({
     // TODO: remove on go live
     disallow: ['/'],
   },
+
   seoExperiments: {
     enabled: true,
   },
+
   schemaOrg: {
     enabled: true,
     identity: {
@@ -170,6 +180,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   linkChecker: {
     enabled: true,
     failOnError: true,
@@ -178,16 +189,21 @@ export default defineNuxtConfig({
       markdown: true,
     },
   },
+
   fonts: {
     families: [{ name: 'Rufina', provider: 'google' }],
   },
+
   gtm: {
     id: 'GTM-KWMJ6G57',
     defer: true,
     compatibility: true,
   },
+
   alias: {
     pinia: '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs',
   },
+
   eslint: {},
+  compatibilityDate: '2024-07-22',
 })
