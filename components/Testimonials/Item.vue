@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { text, name, title } = defineProps({
+const { text, name, title, link } = defineProps({
   text: {
     type: String,
     default() {
@@ -18,18 +18,31 @@ const { text, name, title } = defineProps({
       return ''
     },
   },
+  link: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
 })
 </script>
 
 <template>
   <blockquote class="testimonials__quote">
-    <p v-if="text.length > 0" class="testimonials__text">{{ text }}</p>
+    <component
+      :is="link.length > 0 ? 'a' : 'div'"
+      :href="link.length > 0 ? link : null"
+      :target="link.length > 0 ? '_blank' : null"
+      class="testimonials__quote-container"
+    >
+      <p v-if="text.length > 0" class="testimonials__text">{{ text }}</p>
 
-    <cite v-if="name.length > 0 && title.length > 0" class="testimonials__cite">
-      <strong>{{ name }}</strong>
+      <cite v-if="name.length > 0 || title.length > 0" class="testimonials__cite">
+        <strong v-if="name.length > 0">{{ name }}</strong>
 
-      <span>{{ title }}</span>
-    </cite>
+        <span v-if="title.length > 0">{{ title }}</span>
+      </cite>
+    </component>
   </blockquote>
 </template>
 
@@ -48,10 +61,25 @@ const { text, name, title } = defineProps({
     margin: 0;
   }
 
+  &__quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    height: 100%;
+
+    &:link:hover,
+    &:link:focus {
+      opacity: 0.5;
+      transition: opacity 250ms ease-in-out;
+    }
+  }
+
   &__text {
     flex: 1;
     display: block;
     margin: 0;
+    color: $text-colour;
   }
 
   &__cite {
