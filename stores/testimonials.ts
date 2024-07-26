@@ -20,7 +20,7 @@ export const useTestimonialsStore = defineStore('testimonialsStore', {
         link: 'https://www.linkedin.com/in/sean-morrison-a8943a170/',
       },
       {
-        text: 'I have used Oliver for all my mortgage planning needs after difficulty going direct to lenders. I would absolutely recommend Oliver and will use him for my future mortgage needs.',
+        text: 'In what is usually a stressful experience, Oliver was reassuring and extremely helpful. Both Oliver and Howard are always available and completely transparent. Cannot recommend them highly enough.',
         name: 'Alex Brown',
         title: 'Senior Business Analyst, TIW Group Ltd',
         link: 'https://www.linkedin.com/in/alex-brown-b85a0a75/',
