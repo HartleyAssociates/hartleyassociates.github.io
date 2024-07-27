@@ -70,8 +70,8 @@ const { idProp, title, description, cards, rowSize } = defineProps({
   }
 
   &__title {
-    @include componentHeading;
     @include componentHeadingDefault;
+    @include componentHeading;
   }
 
   &__text {

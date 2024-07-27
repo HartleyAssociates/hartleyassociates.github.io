@@ -179,9 +179,9 @@ const {
   }
 
   &__title {
-    @include componentHeading;
-    @include componentHeadingDefault;
     margin: 0;
+    @include componentHeadingDefault;
+    @include componentHeading;
   }
 
   &__description {

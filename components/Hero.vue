@@ -120,12 +120,12 @@ onMounted(() => {
   }
 
   &__title {
-    @include componentHeadingLarge;
     color: $white-colour;
     margin: 0;
     opacity: 0;
     transition: opacity $animation--time ease-in-out;
     transition-delay: $animation--delay;
+    @include componentHeadingLarge;
 
     .hero.hero--animate-delay & {
       opacity: 1;

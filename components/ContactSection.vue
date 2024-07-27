@@ -126,7 +126,7 @@ const contactDetails = useContactDetails()
     margin: 0 auto;
 
     @media only screen and (max-width: 799px) {
-      min-height: auto;
+      height: auto;
     }
   }
 
