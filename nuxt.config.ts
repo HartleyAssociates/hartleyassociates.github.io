@@ -1,8 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 const SITE_NAME = 'Hartley Associates'
-// TODO: remove on go live
-const SITE_URL = 'https://hartleyassociates.github.io'  // 'https://hartleyassociates.info'
+const SITE_URL = 'https://hartleyassociates.info'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -24,8 +23,6 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       meta: [
-        // TODO: remove on go live
-        { name: 'robots', content: 'noindex, nofollow' },
         { name: 'keywords', content: 'Finance, Mortgages, Buy to lets, Insurance, poor credit, investing, retirement' },
       ],
       script: [{ src: 'https://kit.fontawesome.com/f1d1dadb8c.js', crosscrossorigin: 'anonymous' }],
@@ -35,6 +32,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxt/image', '@nuxt/fonts', '@zadigetvoltaire/nuxt-gtm', '@pinia/nuxt'],
 
   site: {
+    indexable: true,
     url: SITE_URL,
     name: SITE_NAME,
     description: 'Welcome Hartley Associates',
@@ -57,8 +55,7 @@ export default defineNuxtConfig({
     enabled: true,
     sitemap: '/sitemap.xml',
     credits: true,
-    // TODO: remove on go live
-    disallow: ['/'],
+    allow: ['/'],
   },
 
   seoExperiments: {
