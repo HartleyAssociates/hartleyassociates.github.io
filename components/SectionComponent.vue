@@ -27,7 +27,7 @@ onMounted(() => {
       })
     },
     {
-      threshold: 0.5,
+      threshold: window.innerWidth >= 800 ? 0.4 : 0.2,
     },
   )
 
@@ -38,7 +38,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="section" ref="section">
+  <section ref="section" class="section">
     <div v-if="idProp.length > 0" :id="idProp" class="section__scrollTo" />
     <slot />
   </section>
