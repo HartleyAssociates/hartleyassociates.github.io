@@ -17,7 +17,7 @@
         {
           image: '/images/MISC--self-employed.jpg',
           alt: 'Person on a computer in an office',
-          title: 'Self Employed Mortgages',
+          title: 'Mortgage Advice - For the Employed and Self Employed',
           description: 'Find a mortgage provider that suits',
           linkText: 'Know more',
           link: '/mortgages',
@@ -25,7 +25,7 @@
         {
           image: '/images/MISC--planning-retirement.jpg',
           alt: 'Jar of coins with a plant growing in it',
-          title: 'Retirement planning',
+          title: 'Retirement Planning',
           description: 'Worried about the future',
           linkText: 'What we can offer',
           link: '/pension',

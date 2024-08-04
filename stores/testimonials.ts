@@ -41,7 +41,7 @@ export const useTestimonialsStore = defineStore('testimonialsStore', {
   }),
   actions: {
     randomNumber() {
-      return Math.floor(Math.random() * this.testimonials.length - 1)
+      return Math.floor(Math.random() * (this.testimonials.length - 1))
     },
     getAllTestimonials() {
       return this.testimonials
@@ -51,7 +51,7 @@ export const useTestimonialsStore = defineStore('testimonialsStore', {
       let randomNumberTwo = this.randomNumber()
 
       if (randomNumberOne === randomNumberTwo) {
-        randomNumberTwo = randomNumberTwo - 1
+        randomNumberTwo = randomNumberTwo - 1 < 0 ? randomNumberTwo + 1 : randomNumberTwo - 1
       }
 
       return [this.testimonials[randomNumberOne], this.testimonials[randomNumberTwo]]

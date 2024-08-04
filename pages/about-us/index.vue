@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  description: 'Hartley Associates is a family run financial advice and planning firm. We have over 40 years of experience under one roof. From investment and retirement planning to helping a young couple get that first step onto the housing ladder. We pride ourselves on our client centric approach and successful results carefully tailored to the clients needs.',
+  description:
+    'Hartley Associates is a family run financial advice and planning firm. We have over 40 years of experience under one roof. From investment and retirement planning to helping a young couple get that first step onto the housing ladder. We pride ourselves on our client centric approach and successful results carefully tailored to the clients needs.',
 })
 </script>
 
@@ -24,8 +25,8 @@ useSeoMeta({
         {
           image: '/images/about-us--40.jpg',
           alt: 'People in a meeting, talking over a document',
-          title: '40+ Years of experience',
-          description: 'a vast knowledge base at your disposal',
+          title: '40+ Years Of Experience',
+          description: 'A vast knowledge base at your disposal',
           linkText: 'Who works for us',
           link: '/about-us/our-team',
         },
@@ -33,14 +34,14 @@ useSeoMeta({
           image: '/images/about-us--127.jpg',
           alt: 'Person in a white shirt using a smartphone',
           title: '127 Valued Clients',
-          description: 'have access our services in the last 2 years',
+          description: 'Have access our services in the last 2 years',
           linkText: 'Find out who they are',
           link: '/about-us/testimonials',
         },
         {
           image: '/images/about-us--network.jpg',
           alt: 'Two people in a business meeting',
-          title: '35+ Advisers in wider network',
+          title: '35+ Advisers In Wider Network',
           description: 'Specialist services on demand',
           linkText: 'Our Network',
           link: '/about-us/our-network',
