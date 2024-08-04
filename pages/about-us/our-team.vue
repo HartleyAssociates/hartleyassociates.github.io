@@ -10,7 +10,7 @@ useSeoMeta({
 
     <ImageText
       title="Howard Morgan"
-      description="Since starting in the industry in 1987 Howard has developed his knowledge in all areas of financial planning. Spending most of his time speaking to clients about their pensions and investment portfolios carrying out any agreed actions to help clients grow their money or access their pension."
+      description="Employed by Sun Life of Canada 1988 as a Financial Adviser in Sidcup Kent and Promoted to Senior Sales Manager. Moved to an IFA role in 1999 with Membership Services affinity group marketing providing financial advice to union affiliated trade union member the largest being the Royal Collage of Nursing. 2001 joined Zurich Advice Network in a recruitment and management development role. 2003 Joined Ravensbourne Financial Services who were an appointed Representative of Openwork Financial Services as a financial adviser. 2013 joined Charles Derby Financial Services Ltd. Charles Derby Ltd were then taken over by Quilter Financial Services in 2020.<br><br>In November 2022 Howard started Hartley Associates Ltd which is a trading style of Octo Financial Services who are an appointed representative of 2plan wealth management."
       text-alignment="left"
       image-type="portrait"
       image="/images/howard.jpg"

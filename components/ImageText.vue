@@ -123,9 +123,7 @@ const {
       >
         <h3 v-if="title.length > 0" class="image-text__title" v-html="title" />
 
-        <p v-if="description.length > 0" class="image-text__description">
-          {{ description }}
-        </p>
+        <p v-if="description.length > 0" class="image-text__description" v-html="description" />
 
         <div v-if="link.length > 0 || linkText.length > 0" class="image-text__link">
           <NuxtLink :to="link" :target="link.charAt(0) === '/' ? '_self' : '_blank'">
