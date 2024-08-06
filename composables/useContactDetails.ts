@@ -10,9 +10,9 @@ export const useContactDetails = () => {
         type: 'phone',
       },
       {
-        link: 'mailto:enquires@hartleyassociates.info',
+        link: 'mailto:enquiries@hartleyassociates.info',
         text: 'Email Us',
-        altText: 'enquires@hartleyassociates.info',
+        altText: 'enquiries@hartleyassociates.info',
         type: 'email',
       },
     ],
