@@ -26,7 +26,8 @@ const store = useNavigationStore()
               :to="{ path: childItem.href, hash: childItem.hash }"
               class="footer__nav-a footer__nav-a--subnav"
               active-class="footer__nav-a--active"
-              :external="childItem.hash && childItem.hash.length > 0"
+              :external="(childItem.hash && childItem.hash.length > 0) || childItem.isExternal"
+              :target="childItem.isExternal ? '_blank' : '_self'"
             >
               {{ childItem.text }}
             </NuxtLink>

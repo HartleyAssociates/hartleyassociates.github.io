@@ -24,6 +24,18 @@ const { text, name, title, link } = defineProps({
       return ''
     },
   },
+  location: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
+  date: {
+    type: String,
+    default() {
+      return ''
+    },
+  },
 })
 </script>
 
@@ -42,6 +54,12 @@ const { text, name, title, link } = defineProps({
 
         <span v-if="title.length > 0">{{ title }}</span>
       </cite>
+
+      <p v-if="location.length > 0 || date.length > 0" class="testimonials__meta">
+        <span v-if="location.length > 0">{{ location }}</span>
+
+        <span v-if="date.length > 0">{{ date }}</span>
+      </p>
     </component>
   </blockquote>
 </template>
@@ -97,6 +115,21 @@ const { text, name, title, link } = defineProps({
     span {
       margin: px-to-rem(2px) 0 0;
       color: $primary-colour;
+    }
+  }
+
+  &__meta {
+    margin: px-to-rem(2px) 0 0;
+    color: $primary-colour;
+    font-style: normal;
+    font-size: px-to-rem(13px);
+
+    span {
+      & + span:before {
+        display: inline-block;
+        content: " | ";
+        margin: 0 px-to-rem(7px);
+      }
     }
   }
 }

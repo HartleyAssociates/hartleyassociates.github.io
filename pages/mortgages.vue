@@ -11,6 +11,9 @@ useSeoMeta({
 
     <RichText id-prop="residential-mortgages">
       <p>
+        <strong>Please note your home may be repossessed if you do not keep up repayments on your mortgage.</strong>
+      </p>
+      <p>
         At Hartley Associates we run a dedicated mortgage broker service covering the whole of the UK. We aim to work
         closely with you on your mortgage journey helping you in understanding your mortgage journey and find a solution
         that suits your needs. If you would like to start your journey please get in

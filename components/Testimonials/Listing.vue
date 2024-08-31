@@ -27,6 +27,8 @@ const testimonials = type === 'homepage' ? store.getTestimonials() : store.getAl
           :name="item?.name ?? ''"
           :title="item?.title ?? ''"
           :link="item?.link ?? ''"
+          :location="item?.location ?? ''"
+          :date="item?.date ?? ''"
         />
       </div>
     </div>

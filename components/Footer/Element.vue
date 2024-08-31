@@ -48,10 +48,14 @@
     background: color.adjust($black-colour, $lightness: -3.5%);
     padding: px-to-rem(15px) 0;
 
+    .blurb {
+      @extend %ugc;
+    }
+
     p {
       color: $white-colour;
       font-size: px-to-rem(13px);
-      margin: 0;
+      // margin: 0;
       text-align: justify;
       padding: 0 px-to-rem(10px);
 

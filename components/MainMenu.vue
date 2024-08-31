@@ -25,7 +25,8 @@ const store = useNavigationStore()
               :to="{ path: childItem.href, hash: childItem.hash }"
               class="mainmenu__nav-a mainmenu__nav-a--subnav"
               active-class="mainmenu__nav-a--active"
-              :external="childItem.hash && childItem.hash.length > 0"
+              :external="(childItem.hash && childItem.hash.length > 0) || childItem.isExternal"
+              :target="childItem.isExternal ? '_blank' : '_self'"
             >
               {{ childItem.text }}
             </NuxtLink>
