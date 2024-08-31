@@ -14,6 +14,9 @@ useSeoMeta({
     />
 
     <RichText id-prop="planning-for-the-future">
+      <p>
+        <strong>The value of investments and any income from them can fall as well as rise and you may not get back the original amount invested.</strong>
+      </p>
       <h2>Planning for the future</h2>
       <p>
         There are many different methods of achieving long term financial goals - be it investing for income or growth
