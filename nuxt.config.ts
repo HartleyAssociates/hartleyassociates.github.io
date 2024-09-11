@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 const SITE_NAME = 'Hartley Associates'
-const SITE_URL = 'https://hartleyassociates.info'
+const SITE_URL = 'https://www.hartleyassociates.info'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
