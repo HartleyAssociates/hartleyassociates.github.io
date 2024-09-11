@@ -10,6 +10,9 @@ useSeoMeta({
     <Hero title="Pension" img="/images/pension--banner.jpg" alt="Two people sitting outside at sunset" />
 
     <RichText id-prop="planning-for-retirement">
+      <p>
+        <strong>The value of investments and any income from them can fall as well as rise and you may not get back the original amount invested.</strong>
+      </p>
       <h2>Planning for retirement</h2>
       <p>
         Retirement is a major change in a person's life. It may be something you're looking forward to, however, it can
