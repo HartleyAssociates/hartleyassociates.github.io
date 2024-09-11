@@ -4,7 +4,12 @@ const SITE_NAME = 'Hartley Associates'
 const SITE_URL = 'https://www.hartleyassociates.info'
 
 export default defineNuxtConfig({
+  routeRules: {
+    '/contact-us/thank-you': { robots: false },
+  },
+
   devtools: { enabled: true },
+
   css: ['~/assets/scss/main.scss'],
 
   vite: {
@@ -56,6 +61,7 @@ export default defineNuxtConfig({
     sitemap: '/sitemap.xml',
     credits: true,
     allow: ['/'],
+    disallow: ['/contact-us/thank-you'],
   },
 
   seoExperiments: {
